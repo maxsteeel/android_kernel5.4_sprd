@@ -1,0 +1,146 @@
+
+/*
+ * ILI9882H GUOXIAN LCD config dtsi file for spreadtrum
+ *
+ * Copyright (C) 2018, Spreadtrum Communications Inc.
+ *
+ * SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+ */
+
+/ {
+	fragment {
+		target-path = "/";
+		__overlay__ {
+			lcds {
+				lcd_gc9503cv_hx_mipi: lcd_gc9503cv_hx_mipi{
+
+					sprd,dsi-work-mode = <1>; /* video burst mode*/
+					sprd,dsi-lane-number = <2>;
+					sprd,dsi-color-format = "rgb888";
+
+					sprd,phy-bit-clock = <460000>;	/* kbps */
+					sprd,phy-escape-clock = <20000>;/* kHz */
+
+					sprd,width-mm = <62>;
+					sprd,height-mm = <124>;
+
+					sprd,esd-check-enable = <1>;
+					sprd,esd-check-mode = <3>;
+					sprd,esd-check-period = <2000>;
+					sprd,esd-check-register = <0x0A>;
+					sprd,esd-check-value = <0x9C>;
+
+					lcd-glass = "CTC";
+					lcd-module = "TCL";
+					lcd-name = "GC9503CV";
+
+					sprd,reset-on-sequence = <1 10>, <0 10>, <1 20>;
+					sprd,reset-off-sequence = <1 20>;
+
+					//sprd,use-dcs-write;
+					sprd,initial-command = [
+						39 00 00 06 F0 55 AA 52 08 00
+						39 00 00 03 F6 5A 87
+						23 00 00 02 C9 10
+						23 00 00 02 CD 25
+						23 00 00 02 F8 8A
+						23 00 00 02 AC 45
+
+						23 00 00 02 A7 47
+						23 00 00 02 A0 BB
+						39 00 00 05 86 99 A3 A3 31 
+						23 00 00 04 87 04 03 66
+						39 00 00 05 FA 8f 00 00 04 
+						
+						23 00 00 02 A3 6E 
+						23 00 00 04 FD 3C 3C 00 
+						39 00 00 02 B1 10
+						23 00 00 03 7A 0F 13
+						23 00 00 03 7B 0F 13
+
+						39 00 00 21 6D 07 1E 01 00 1f 09 0f 0b 0d 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 0E 0C 10 0A 1F 00 02 1E 08
+						39 00 00 09 60 38 0a 6D 6D 38 09 6D 6D
+						39 00 00 09 63 33 be 6D 6D 33 bf 6D 6D 
+						39 00 00 11 64 28 06 03 c2 03 03 28 05 03 c3 03 03 6D 6D 6D 6D
+						39 00 00 11 67 28 04 03 c4 03 03 28 03 03 c5 03 03 6D 6D 6D 6D 
+						39 00 00 11 65 28 02 03 c6 03 03 28 01 03 c7 03 03 6D 6D 6D 6D
+						39 00 00 11 66 20 00 03 c0 03 03 20 01 03 c1 03 03 6D 6D 6D 6D
+						39 00 00 08 69 14 22 14 22 44 22 08
+						39 00 00 02 6B 07
+						39 00 00 35 D1 00 00 00 01 00 08 00 19 00 2B 00 55 00 7E 00 BB 00 E8 01 33 01 6B 01 B8 01 F8 01 FA 02 32 02 68 02 88 02 AD 02 C3 02 E1 02 F3 03 0D 03 22 03 3E 03 7A 03 FF
+						39 00 00 35 D2 00 00 00 01 00 08 00 19 00 2B 00 55 00 7E 00 BB 00 E8 01 33 01 6B 01 B8 01 F8 01 FA 02 32 02 68 02 88 02 AD 02 C3 02 E1 02 F3 03 0D 03 22 03 3E 03 7A 03 FF
+						39 00 00 35 D3 00 00 00 01 00 08 00 19 00 2B 00 55 00 7E 00 BB 00 E8 01 33 01 6B 01 B8 01 F8 01 FA 02 32 02 68 02 88 02 AD 02 C3 02 E1 02 F3 03 0D 03 22 03 3E 03 7A 03 FF
+						39 00 00 35 D4 00 00 00 01 00 08 00 19 00 2B 00 55 00 7E 00 BB 00 E8 01 33 01 6B 01 B8 01 F8 01 FA 02 32 02 68 02 88 02 AD 02 C3 02 E1 02 F3 03 0D 03 22 03 3E 03 7A 03 FF
+						39 00 00 35 D5 00 00 00 01 00 08 00 19 00 2B 00 55 00 7E 00 BB 00 E8 01 33 01 6B 01 B8 01 F8 01 FA 02 32 02 68 02 88 02 AD 02 C3 02 E1 02 F3 03 0D 03 22 03 3E 03 7A 03 FF
+						39 00 00 35 D6 00 00 00 01 00 08 00 19 00 2B 00 55 00 7E 00 BB 00 E8 01 33 01 6B 01 B8 01 F8 01 FA 02 32 02 68 02 88 02 AD 02 C3 02 E1 02 F3 03 0D 03 22 03 3E 03 7A 03 FF
+						23 78 00 02 11 00
+						23 78 00 02 29 00
+						];
+					sprd,sleep-in-command = [
+						39 00 00 06 F0 55 aa 52 08 00
+						23 00 00 03 F6 5a 87
+						23 00 00 02 C2 ce
+						23 00 00 02 C3 cd
+						23 00 00 02 C6 fc
+						23 00 00 02 C5 03
+						23 00 00 02 CD 64
+						23 00 00 02 C4 ff
+						23 00 00 02 C9 cd
+						23 14 00 02 6C 60
+						23 00 00 02 B1 00
+						39 14 00 05 FA 7F 00 00 00
+						23 0A 00 02 6C 50
+						23 32 00 02 28 00
+						23 14 00 02 10 00 
+						23 00 00 04 FD aa aa 0a
+						23 00 00 03 FE 6a 0a
+						23 00 00 03 78 2a aa
+						23 00 00 03 92 17 08
+						23 00 00 03 77 aa 2a
+						23 00 00 03 76 aa aa
+						23 00 00 02 84 00
+						23 00 00 03 78 2b ba
+						23 00 00 02 89 73
+						23 00 00 02 88 3A
+						23 00 00 02 85 B0
+						23 00 00 03 76 eb aa
+						23 00 00 02 94 80
+						23 00 00 04 87 04 07 30
+						23 00 00 02 93 27
+						23 00 00 02 AF 02     
+						];
+					sprd,sleep-out-command = [
+						39 00 00 21 6D 07 1E 01 00 1f 09 0f 0b 0d 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 1E 0E 0C 10 0A 1F 00 02 1E 08
+						39 00 00 09 60 38 0a 6D 6D 38 09 6D 6D
+						39 00 00 09 63 33 be 6D 6D 33 bf 6D 6D
+						39 00 00 11 64 28 06 03 C2 03 03 28 05 03 C3 03 03 6D 6D 6D 6D
+						39 00 00 11 67 28 04 03 c4 03 03 28 03 03 c5 03 03 6D 6D 6D 6D
+						39 00 00 11 65 28 02 03 c6 03 03 28 01 03 c7 03 03 6D 6D 6D 6D
+						39 00 00 11 66 20 00 03 c0 03 03 20 01 03 c1 03 03 6D 6D 6D 6D 
+						39 00 00 08 69 14 22 14 22 44 22 08
+						39 00 00 02 6B 07
+						23 00 00 02 38 00
+						23 00 00 02 11 00
+						23 00 00 02 29 00
+						];
+
+					display-timings {
+						native-mode = <&gc9503cv_hx_timing0>;
+
+						gc9503cv_hx_timing0:timing0 {
+							clock-frequency = <32000000>;
+							hactive = <480>;
+							vactive = <960>;
+							hback-porch = <20>;
+							hfront-porch = <20>;
+							vback-porch = <30>;
+							vfront-porch = <20>;
+							hsync-len = <10>;
+							vsync-len = <8>;
+						};
+					};
+				};
+			};
+		};
+	};
+};

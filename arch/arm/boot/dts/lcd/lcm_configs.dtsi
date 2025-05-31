@@ -1,0 +1,137 @@
+/ {
+	lcds {
+
+		sprd,dsi-work-mode = <1>;/* video burst mode*/
+		bpp = <24>;
+		sprd,dsi-lane-number = <2>;
+		sprd,dsi-color-format = "rgb888";
+
+		/* panel interface type: 2:MIPI; 3:SPI */
+		sprd,panel-if-type = <2>;
+
+//		sprd,phy-bit-clock = <300000>;	/* kbps */
+		sprd,phy-escape-clock = <20000>;/* kHz */
+		sprd,width-mm = <62>;
+		sprd,height-mm = <110>;
+//		sprd,lcd_buildin_name = "lcd_nt36xxx_mipi_hd";
+
+		hactive = <480>;
+		vactive = <854>;
+		lcm_ic_inch = "5";
+
+		/*************************************
+		adb tool fix param:1 open; 0 close
+		**************************************/
+		lcm_adb_fix_param = <1>;
+
+		/*************************************
+		Is the bias charged before or after reset:
+		1 before; 0 after
+		**************************************/
+		bias_pwrup_reset = <0>;
+
+		lcm_ic_num = <2>;/*how much ic num*/
+
+		/**************************************
+		param explain:  lcm_compatible_mode
+		0: no compatible
+		1: adcid
+		2: chipid
+		3: adcid&&chipid
+		4: adc | vendor chipid
+		(this param with lcm_ic_adc_or_chipid param use)
+		5: gpioid
+		***************************************/
+		lcm_compatible_mode = <2>;
+
+		/***************************************
+		adc compatible channel
+		***************************************/
+		lcm_adc_channel = <2>;/*adc channel num*/
+
+//		tp_touchscreen_rst = <63>;
+//		tp_touchscreen_irq = <64>;
+//		tp_touchscreen_cs = <47>;
+
+		lcm_bl_delays = <75>;
+
+		lcd_gc9503_mipi_hd_1: lcd95031np@95031np  {
+
+			sprd,esd-check-enable = <0>;
+			sprd,esd-check-mode = <2>;
+			sprd,esd-check-period = <2000>;
+			sprd,esd-check-register = <0x0A>;
+			sprd,esd-check-value = <0x9C>;
+
+			//sprd,phy-bit-clock = <690000>;
+			//sprd,phy-escape-clock = <20000>;
+			lcm_ic_name= "gc9503";
+
+			/****************************************************
+			same ic num moden:
+			****************************************************/
+			lcm_moden_num = <1>;
+			/****************************************************
+			chipid register:
+			****************************************************/
+			lcm_chipid_register = <0x04>;
+
+			//sprd,lcd-id-register = [0x3b];
+			//sprd,lcd-id-value-len = <1>;
+			//sprd,lcd-id-value = [36];
+			sprd,lcd-id-tokernel = <0x95031>;
+
+			/************************************
+			lcm resume Need to initialize
+			*************************************/
+			lcm_is_init = <1>;
+
+			lcm@0 {
+				lcm_chip_id = <0x039501>;
+				lcm_adc_value_standard = <0>;/*standard value 0v*/
+				lcm_adc_value_offset = <200>;/*standard value offset 0.5v*/
+				lcm_gpio_id = <0>;/*io id:0:low 1:high*/
+			};
+		};
+
+		lcd_st7701s_mipi_hd: lcd770101@770101  {
+
+			sprd,esd-check-enable = <0>;
+			sprd,esd-check-mode = <1>;
+			sprd,esd-check-period = <1000>;
+			sprd,esd-check-register = <0x0A>;
+			sprd,esd-check-value = <0x9C>;
+
+			//sprd,phy-bit-clock = <690000>;
+			//sprd,phy-escape-clock = <20000>;
+			lcm_ic_name= "st7701";
+
+			/****************************************************
+			same ic num moden:
+			****************************************************/
+			lcm_moden_num = <1>;
+			/****************************************************
+			chipid register:
+			****************************************************/
+			lcm_chipid_register = <0x04>;
+
+			//sprd,lcd-id-register = [0x3b];
+			//sprd,lcd-id-value-len = <1>;
+			//sprd,lcd-id-value = [36];
+			sprd,lcd-id-tokernel = <0x770101>;
+
+			/************************************
+			lcm resume Need to initialize
+			*************************************/
+			lcm_is_init = <1>;
+
+			lcm@0 {
+				lcm_chip_id = <0x03ffff>;
+				lcm_adc_value_standard = <1540>;/*standard value 0v*/
+				lcm_adc_value_offset = <200>;/*standard value offset 0.5v*/
+				lcm_gpio_id = <0>;/*io id:0:low 1:high*/
+			};
+		};
+
+	};
+};

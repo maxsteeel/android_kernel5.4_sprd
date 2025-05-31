@@ -1,0 +1,59 @@
+/*
+ * Spreadtrum SP9832E 1H10 GO FULL board DTS file
+ *
+ * Copyright (C) 2021, Spreadtrum Communications Inc.
+ *
+ * This file is licensed under a dual GPLv2 or X11 license.
+ */
+/dts-v1/;
+
+#include <dt-bindings/gpio/gpio.h>
+#include "sc9832e.dtsi"
+#include "sc9832e-wcn.dtsi"
+#include "a511lp2_sc2721.dtsi"
+#include "sprd-sound-sharkl.dtsi"
+#include "sp9832e-go-mach.dtsi"
+#include "lcd/lcm_configs.dtsi"
+#include "lcd/lcm_param.dtsi"
+
+/*
+Tips:
+*	1. <SoC>.dts store NOTHING unless properties "model","compatible" and "sprd,sc-id",
+*		which are used for matching board id;
+*	2. Puts nodes belong to chip family in <chip_family>.dtsi, like sharkl3.dtsi;
+*	3. Puts nodes belong to SoC in <SoC>.dtsi, like sc9863a.dtsi;
+*	4. Puts nodes belong to vendor solid configurations in <SoC-mach>.dtsi, like sp9863a-mach.dtsi.
+*/
+
+/ {
+	model = "Spreadtrum SC9832E SoC";
+
+	compatible = "sprd,sc9832e";
+
+	sprd,sc-id = "a511lp2 1h10 1000";
+};
+
+&i2c3 {
+                status = "okay";
+                tsetup = <1>;
+                clock-frequency = <400000>;
+                adaptive_touchscreen: adaptive-touchscreen@2e {
+                        status = "okay";
+                        compatible = "adaptive-touchscreen";
+                        reg = <0x2e>;
+                        gpios = <&ap_gpio 145 0
+                                &ap_gpio 121 0>;
+
+                        touch,reset-gpio = <&ap_gpio 145 0>;
+                        touch,irq-gpio= <&ap_gpio 121 0>;
+
+        		controller = "tlsc6x,TLSC6X";
+
+                        private-data {
+                                a8 = /bits/ 8 <0x5a>;
+                        };
+                };
+};
+
+
+#include "tp_param.dtsi"

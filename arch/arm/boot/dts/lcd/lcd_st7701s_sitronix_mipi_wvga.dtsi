@@ -1,0 +1,102 @@
+/ {
+	fragment {
+		target-path = "/";
+		__overlay__ {
+			lcds {
+				lcd_st7701s_sitronix_mipi_wvga: lcd_st7701s_sitronix_mipi_wvga {
+
+					sprd,dsi-work-mode = <1>;
+					sprd,dsi-lane-number = <2>;
+					sprd,dsi-color-format = "rgb888";
+
+					sprd,phy-bit-clock = <460000>;
+					sprd,phy-escape-clock = <20000>;
+
+					sprd,width-mm = <62>;
+					sprd,height-mm = <110>;
+
+					sprd,esd-check-enable = <0>;
+					sprd,esd-check-mode = <1>;
+					sprd,esd-check-period = <1000>;
+					sprd,esd-check-register = <0x0A>;
+					sprd,esd-check-value = <0x9C>;
+
+					sprd,reset-on-sequence = <1 5>, <0 15>, <1 120>;
+					sprd,reset-off-sequence = <0 20>;
+
+					sprd,initial-command = [
+							39 00 00 06 FF 77 01 00 00 13
+							23 00 00 02 EF 08
+							39 00 00 06 FF 77 01 00 00 10
+							39 00 00 03 C0 E9 03
+							39 00 00 03 C1 11 02
+							39 00 00 03 C2 37 08
+							23 00 00 02 CC 10
+							39 00 00 11 B0 00 06 13 14 1A 0A 12 09 09 24 02 0C 0F 0A 0F 1F
+							39 00 00 11 B1 00 08 13 14 18 0B 11 08 08 27 08 15 11 21 23 1F
+							39 00 00 06 FF 77 01 00 00 11
+							23 00 00 02 B0 65
+							23 00 00 02 B1 3D
+							23 00 00 02 B2 87
+							23 00 00 02 B3 80
+							23 00 00 02 B5 47
+							23 00 00 02 B7 85
+							23 00 00 02 B8 21
+							23 00 00 02 B9 10
+							23 00 00 02 C1 78
+							23 00 00 02 C2 78
+							23 00 00 02 D0 88
+							39 00 00 04 E0 00 00 02
+							39 00 00 0C E1 08 00 0A 00 07 00 09 00 00 33 33
+							39 00 00 0E E2 00 00 00 00 00 00 00 00 00 00 00 00 00
+							39 00 00 05 E3 00 00 33 33
+							39 00 00 03 E4 44 44
+							39 00 00 11 E5 0E 60 A0 A0 10 60 A0 A0 0A 60 A0 A0 0C 60 A0 A0
+							39 00 00 05 E6 00 00 33 33
+							39 00 00 03 E7 44 44
+							39 00 00 11 E8 0D 60 A0 A0 0F 60 A0 A0 09 60 A0 A0 0B 60 A0 A0
+							39 00 00 08 EB 02 01 E4 E4 44 00 40
+							39 00 00 03 EC 02 01
+							39 00 00 11 ED AB 89 76 54 01 FF FF FF FF FF FF 10 45 67 98 BA
+							39 00 00 07 EF 08 08 08 45 3F 54
+							39 00 00 06 FF 77 01 00 00 13
+							39 00 00 03 E6 16 7C
+							39 00 00 03 E8 00 0E
+							39 00 00 06 FF 77 01 00 00 00
+							23 00 00 02 35 00
+							23 78 00 02 11 00
+							39 00 00 06 FF 77 01 00 00 13
+							39 0A 00 03 E8 00 0C
+							39 00 00 03 E8 00 00
+							39 00 00 06 FF 77 01 00 00 00
+							23 14 00 02 29 00
+						];
+					sprd,sleep-in-command = [
+						13 14 00 01 28
+						13 78 00 01 10
+						];
+					sprd,sleep-out-command = [
+						13 78 00 01 11
+						13 14 00 01 29
+						];
+
+					display-timings {
+						native-mode = <&st7701s_2lane_timing0>;
+						st7701s_2lane_timing0: timing0 {
+							clock-frequency = <32000000>;
+							hactive = <480>;
+							vactive = <854>;
+							hback-porch = <60>;
+							hfront-porch = <60>;
+							vback-porch = <60>;
+							vfront-porch = <20>;
+							hsync-len = <10>;
+							vsync-len = <10>;
+						};
+					};
+				};
+			};
+		};
+	};
+};
+

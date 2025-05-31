@@ -1,0 +1,1349 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AL2_FCS_COEF	focaltech_flash.h	105;"	d
+BASIC_THRESHOLD_INCELL	focaltech_test/focaltech_test_ini.h	75;"	d
+BASIC_THRESHOLD_MC_SC	focaltech_test/focaltech_test_ini.h	95;"	d
+BASIC_THRESHOLD_SC	focaltech_test/focaltech_test_ini.h	119;"	d
+BUS_TYPE_I2C	focaltech_core.h	/^    BUS_TYPE_I2C,$/;"	e	enum:_FTS_BUS_TYPE
+BUS_TYPE_NONE	focaltech_core.h	/^    BUS_TYPE_NONE,$/;"	e	enum:_FTS_BUS_TYPE
+BUS_TYPE_SPI	focaltech_core.h	/^    BUS_TYPE_SPI,$/;"	e	enum:_FTS_BUS_TYPE
+BUS_TYPE_SPI_V2	focaltech_core.h	/^    BUS_TYPE_SPI_V2,$/;"	e	enum:_FTS_BUS_TYPE
+BYTES_PER_TIME	focaltech_test/focaltech_test.h	46;"	d
+BYTE_OFF_0	focaltech_common.h	41;"	d
+BYTE_OFF_16	focaltech_common.h	43;"	d
+BYTE_OFF_24	focaltech_common.h	44;"	d
+BYTE_OFF_8	focaltech_common.h	42;"	d
+CODE_CB_TEST	focaltech_test/focaltech_test.h	/^    CODE_CB_TEST = 12,$/;"	e	enum:csv_itemcode_incell
+CODE_ENTER_FACTORY_MODE	focaltech_test/focaltech_test.h	/^    CODE_ENTER_FACTORY_MODE = 0,$/;"	e	enum:csv_itemcode_incell
+CODE_LCD_NOISE_TEST	focaltech_test/focaltech_test.h	/^    CODE_LCD_NOISE_TEST = 27,$/;"	e	enum:csv_itemcode_incell
+CODE_MUX_OPEN_TEST	focaltech_test/focaltech_test.h	/^    CODE_MUX_OPEN_TEST = 41,$/;"	e	enum:csv_itemcode_incell
+CODE_M_PANELDIFFER_TEST	focaltech_test/focaltech_test.h	/^    CODE_M_PANELDIFFER_TEST = 20,$/;"	e	enum:csv_itemcode_mc_sc
+CODE_M_RAWDATA_TEST	focaltech_test/focaltech_test.h	/^    CODE_M_RAWDATA_TEST = 7,$/;"	e	enum:csv_itemcode_mc_sc
+CODE_M_RAWDATA_UNIFORMITY_TEST	focaltech_test/focaltech_test.h	/^    CODE_M_RAWDATA_UNIFORMITY_TEST = 16,$/;"	e	enum:csv_itemcode_mc_sc
+CODE_M_SCAP_CB_TEST	focaltech_test/focaltech_test.h	/^    CODE_M_SCAP_CB_TEST = 9,$/;"	e	enum:csv_itemcode_mc_sc
+CODE_M_SCAP_RAWDATA_TEST	focaltech_test/focaltech_test.h	/^    CODE_M_SCAP_RAWDATA_TEST = 10,$/;"	e	enum:csv_itemcode_mc_sc
+CODE_M_WEAK_SHORT_CIRCUIT_TEST	focaltech_test/focaltech_test.h	/^    CODE_M_WEAK_SHORT_CIRCUIT_TEST = 15,$/;"	e	enum:csv_itemcode_mc_sc
+CODE_OPEN_TEST	focaltech_test/focaltech_test.h	/^    CODE_OPEN_TEST = 25,$/;"	e	enum:csv_itemcode_incell
+CODE_RAWDATA_TEST	focaltech_test/focaltech_test.h	/^    CODE_RAWDATA_TEST = 7,$/;"	e	enum:csv_itemcode_incell
+CODE_SHORT_TEST	focaltech_test/focaltech_test.h	/^    CODE_SHORT_TEST = 15,$/;"	e	enum:csv_itemcode_incell
+CODE_S_CB_TEST	focaltech_test/focaltech_test.h	/^    CODE_S_CB_TEST = 13,$/;"	e	enum:csv_itemcode_sc
+CODE_S_DCB_TEST	focaltech_test/focaltech_test.h	/^    CODE_S_DCB_TEST = 14,$/;"	e	enum:csv_itemcode_sc
+CODE_S_RAWDATA_TEST	focaltech_test/focaltech_test.h	/^    CODE_S_RAWDATA_TEST = 7,$/;"	e	enum:csv_itemcode_sc
+CSV_BUFFER_LEN	focaltech_test/focaltech_test.h	49;"	d
+CSV_LINE2_BUFFER_LEN	focaltech_test/focaltech_test.h	48;"	d
+CSV_SUPPORT	focaltech_test/focaltech_test.h	600;"	d
+CS_HIGH_DELAY	focaltech_spi.c	43;"	d	file:
+DATA_CRC_EN	focaltech_spi.c	46;"	d	file:
+DATA_ONE_BYTE	focaltech_test/focaltech_test.h	/^    DATA_ONE_BYTE,$/;"	e	enum:byte_mode
+DATA_TWO_BYTE	focaltech_test/focaltech_test.h	/^    DATA_TWO_BYTE,$/;"	e	enum:byte_mode
+DCB_SORT_MAX	focaltech_test/focaltech_test.h	/^    DCB_SORT_MAX = 6,$/;"	e	enum:dcb_sort_num
+DCB_SORT_MIN	focaltech_test/focaltech_test.h	/^    DCB_SORT_MIN = 1,$/;"	e	enum:dcb_sort_num
+DEVIDE_MODE_ADDR	focaltech_test/focaltech_test.h	81;"	d
+DISABLE	focaltech_common.h	61;"	d
+ECC_CHECK_MODE	focaltech_flash.h	/^enum ECC_CHECK_MODE {$/;"	g
+ECC_CHECK_MODE_CRC16	focaltech_flash.h	/^    ECC_CHECK_MODE_CRC16,$/;"	e	enum:ECC_CHECK_MODE
+ECC_CHECK_MODE_XOR	focaltech_flash.h	/^    ECC_CHECK_MODE_XOR,$/;"	e	enum:ECC_CHECK_MODE
+ENABLE	focaltech_common.h	60;"	d
+ENTER_WORK_FACTORY_RETRIES	focaltech_test/focaltech_test.h	73;"	d
+ESDCHECK_INTRCNT_MAX	focaltech_esdcheck.c	48;"	d	file:
+ESDCHECK_WAIT_TIME	focaltech_esdcheck.c	46;"	d	file:
+EVENT_DOWN	focaltech_core.h	97;"	d
+EVENT_NO_DOWN	focaltech_core.h	99;"	d
+EVENT_UP	focaltech_core.h	98;"	d
+FACTORY_NORMAL	focaltech_test/focaltech_test.h	/^    FACTORY_NORMAL,$/;"	e	enum:factory_mode
+FACTORY_REG_CB_ADDR	focaltech_test/focaltech_test.h	124;"	d
+FACTORY_REG_CB_ADDR_H	focaltech_test/focaltech_test.h	104;"	d
+FACTORY_REG_CB_ADDR_L	focaltech_test/focaltech_test.h	105;"	d
+FACTORY_REG_CB_SEL	focaltech_test/focaltech_test.h	174;"	d
+FACTORY_REG_CB_TEST_EN	focaltech_test/focaltech_test.h	127;"	d
+FACTORY_REG_CHX_NUM	focaltech_test/focaltech_test.h	87;"	d
+FACTORY_REG_CHX_NUM_NOMAP	focaltech_test/focaltech_test.h	137;"	d
+FACTORY_REG_CHY_NUM	focaltech_test/focaltech_test.h	88;"	d
+FACTORY_REG_CHY_NUM_NOMAP	focaltech_test/focaltech_test.h	138;"	d
+FACTORY_REG_CH_NUM_SC	focaltech_test/focaltech_test.h	168;"	d
+FACTORY_REG_CLB	focaltech_test/focaltech_test.h	89;"	d
+FACTORY_REG_DATA_SELECT	focaltech_test/focaltech_test.h	90;"	d
+FACTORY_REG_FIR	focaltech_test/focaltech_test.h	153;"	d
+FACTORY_REG_FMODE	focaltech_test/focaltech_test.h	175;"	d
+FACTORY_REG_FRE_LIST	focaltech_test/focaltech_test.h	132;"	d
+FACTORY_REG_HC_SEL	focaltech_test/focaltech_test.h	140;"	d
+FACTORY_REG_K1	focaltech_test/focaltech_test.h	120;"	d
+FACTORY_REG_K2	focaltech_test/focaltech_test.h	121;"	d
+FACTORY_REG_KEYSHORT_EN	focaltech_test/focaltech_test.h	109;"	d
+FACTORY_REG_KEYSHORT_STATE	focaltech_test/focaltech_test.h	110;"	d
+FACTORY_REG_KEY_CBWIDTH	focaltech_test/focaltech_test.h	92;"	d
+FACTORY_REG_KEY_NUM_SC	focaltech_test/focaltech_test.h	169;"	d
+FACTORY_REG_LCD_NOISE_FRAME	focaltech_test/focaltech_test.h	97;"	d
+FACTORY_REG_LCD_NOISE_START	focaltech_test/focaltech_test.h	96;"	d
+FACTORY_REG_LCD_NOISE_STATE	focaltech_test/focaltech_test.h	108;"	d
+FACTORY_REG_LCD_NOISE_TEST_STATE	focaltech_test/focaltech_test.h	98;"	d
+FACTORY_REG_LCD_NOISE_TTHR	focaltech_test/focaltech_test.h	99;"	d
+FACTORY_REG_LEFT_KEY	focaltech_test/focaltech_test.h	112;"	d
+FACTORY_REG_LINE_ADDR	focaltech_test/focaltech_test.h	86;"	d
+FACTORY_REG_MC_SC_CB_ADDR	focaltech_test/focaltech_test.h	144;"	d
+FACTORY_REG_MC_SC_CB_ADDR_OFF	focaltech_test/focaltech_test.h	142;"	d
+FACTORY_REG_MC_SC_CB_H_ADDR_OFF	focaltech_test/focaltech_test.h	143;"	d
+FACTORY_REG_MC_SC_MODE	focaltech_test/focaltech_test.h	141;"	d
+FACTORY_REG_NOMAPPING	focaltech_test/focaltech_test.h	136;"	d
+FACTORY_REG_NORMALIZE	focaltech_test/focaltech_test.h	133;"	d
+FACTORY_REG_OPEN_BUSY	focaltech_test/focaltech_test.h	103;"	d
+FACTORY_REG_OPEN_IDLE	focaltech_test/focaltech_test.h	102;"	d
+FACTORY_REG_OPEN_REG20	focaltech_test/focaltech_test.h	114;"	d
+FACTORY_REG_OPEN_REG21	focaltech_test/focaltech_test.h	115;"	d
+FACTORY_REG_OPEN_REG22	focaltech_test/focaltech_test.h	116;"	d
+FACTORY_REG_OPEN_REG23	focaltech_test/focaltech_test.h	117;"	d
+FACTORY_REG_OPEN_REG2E	focaltech_test/focaltech_test.h	118;"	d
+FACTORY_REG_OPEN_REG86	focaltech_test/focaltech_test.h	119;"	d
+FACTORY_REG_OPEN_START	focaltech_test/focaltech_test.h	100;"	d
+FACTORY_REG_OPEN_STATE	focaltech_test/focaltech_test.h	101;"	d
+FACTORY_REG_OPEN_TEST_EN	focaltech_test/focaltech_test.h	128;"	d
+FACTORY_REG_ORDER_ADDR	focaltech_test/focaltech_test.h	123;"	d
+FACTORY_REG_ORDER_ADDR_H	focaltech_test/focaltech_test.h	106;"	d
+FACTORY_REG_ORDER_ADDR_L	focaltech_test/focaltech_test.h	107;"	d
+FACTORY_REG_PARAM_UPDATE_STATE	focaltech_test/focaltech_test.h	93;"	d
+FACTORY_REG_PATTERN	focaltech_test/focaltech_test.h	135;"	d
+FACTORY_REG_RAWBUF_SELECT	focaltech_test/focaltech_test.h	91;"	d
+FACTORY_REG_RAWDATA_ADDR	focaltech_test/focaltech_test.h	122;"	d
+FACTORY_REG_RAWDATA_ADDR_MC_SC	focaltech_test/focaltech_test.h	134;"	d
+FACTORY_REG_RAWDATA_ADDR_SC	focaltech_test/focaltech_test.h	173;"	d
+FACTORY_REG_RAWDATA_SADDR_SC	focaltech_test/focaltech_test.h	172;"	d
+FACTORY_REG_RAWDATA_TARGET	focaltech_test/focaltech_test.h	129;"	d
+FACTORY_REG_RAWDATA_TEST_EN	focaltech_test/focaltech_test.h	126;"	d
+FACTORY_REG_RIGHT_KEY	focaltech_test/focaltech_test.h	113;"	d
+FACTORY_REG_SCAN_ADDR2	focaltech_test/focaltech_test.h	167;"	d
+FACTORY_REG_SC_CB_ADDR	focaltech_test/focaltech_test.h	171;"	d
+FACTORY_REG_SC_CB_ADDR_OFF	focaltech_test/focaltech_test.h	170;"	d
+FACTORY_REG_SHORT2_ADDR_MC	focaltech_test/focaltech_test.h	163;"	d
+FACTORY_REG_SHORT_ADDR	focaltech_test/focaltech_test.h	125;"	d
+FACTORY_REG_SHORT_ADDR_MC	focaltech_test/focaltech_test.h	152;"	d
+FACTORY_REG_SHORT_TEST_EN	focaltech_test/focaltech_test.h	94;"	d
+FACTORY_REG_SHORT_TEST_STATE	focaltech_test/focaltech_test.h	95;"	d
+FACTORY_REG_WC_SEL	focaltech_test/focaltech_test.h	139;"	d
+FACTORY_TESTMODE_1	focaltech_test/focaltech_test.h	/^    FACTORY_TESTMODE_1,$/;"	e	enum:factory_mode
+FACTORY_TESTMODE_2	focaltech_test/focaltech_test.h	/^    FACTORY_TESTMODE_2,$/;"	e	enum:factory_mode
+FACTORY_TEST_DELAY	focaltech_test/focaltech_test.h	78;"	d
+FACTORY_TEST_RETRY	focaltech_test/focaltech_test.h	77;"	d
+FACTORY_TEST_RETRY_DELAY	focaltech_test/focaltech_test.h	79;"	d
+FACTROY_REG_SHORT2_AB_CH	focaltech_test/focaltech_test.h	164;"	d
+FACTROY_REG_SHORT2_CA	focaltech_test/focaltech_test.h	156;"	d
+FACTROY_REG_SHORT2_CC	focaltech_test/focaltech_test.h	157;"	d
+FACTROY_REG_SHORT2_CG	focaltech_test/focaltech_test.h	158;"	d
+FACTROY_REG_SHORT2_DEALY	focaltech_test/focaltech_test.h	161;"	d
+FACTROY_REG_SHORT2_OFFSET	focaltech_test/focaltech_test.h	159;"	d
+FACTROY_REG_SHORT2_RES_LEVEL	focaltech_test/focaltech_test.h	160;"	d
+FACTROY_REG_SHORT2_TEST_EN	focaltech_test/focaltech_test.h	155;"	d
+FACTROY_REG_SHORT2_TEST_STATE	focaltech_test/focaltech_test.h	162;"	d
+FACTROY_REG_SHORT_AB_CH	focaltech_test/focaltech_test.h	150;"	d
+FACTROY_REG_SHORT_CA	focaltech_test/focaltech_test.h	146;"	d
+FACTROY_REG_SHORT_CC	focaltech_test/focaltech_test.h	147;"	d
+FACTROY_REG_SHORT_CG	focaltech_test/focaltech_test.h	148;"	d
+FACTROY_REG_SHORT_OFFSET	focaltech_test/focaltech_test.h	149;"	d
+FACTROY_REG_SHORT_RES_LEVEL	focaltech_test/focaltech_test.h	151;"	d
+FACTROY_REG_SHORT_TEST_EN	focaltech_test/focaltech_test.h	145;"	d
+FILE_NAME_LENGTH	focaltech_common.h	59;"	d
+FLAGBIT	focaltech_common.h	45;"	d
+FLAGBITS	focaltech_common.h	46;"	d
+FLAG_HID_BIT	focaltech_common.h	49;"	d
+FLAG_ICSERIALS_LEN	focaltech_common.h	48;"	d
+FLAG_IDC_BIT	focaltech_common.h	50;"	d
+FLASH_MODE_ALL	focaltech_flash.h	/^    FLASH_MODE_ALL,$/;"	e	enum:FW_FLASH_MODE
+FLASH_MODE_APP	focaltech_flash.h	/^    FLASH_MODE_APP,$/;"	e	enum:FW_FLASH_MODE
+FLASH_MODE_LIC	focaltech_flash.h	/^    FLASH_MODE_LIC,$/;"	e	enum:FW_FLASH_MODE
+FLASH_MODE_LIC_VALUE	focaltech_flash.h	42;"	d
+FLASH_MODE_PARAM	focaltech_flash.h	/^    FLASH_MODE_PARAM,$/;"	e	enum:FW_FLASH_MODE
+FLASH_MODE_PARAM_VALUE	focaltech_flash.h	43;"	d
+FLASH_MODE_UPGRADE_VALUE	focaltech_flash.h	41;"	d
+FLASH_MODE_WRITE_FLASH_VALUE	focaltech_flash.h	40;"	d
+FTS_APPINFO_APPLEN2_OFF	focaltech_flash.h	86;"	d
+FTS_APPINFO_APPLEN_OFF	focaltech_flash.h	85;"	d
+FTS_APPINFO_OFF	focaltech_flash.h	84;"	d
+FTS_APP_INFO_OFFSET	focaltech_flash.h	107;"	d
+FTS_AUTO_LIC_UPGRADE_EN	focaltech_config.h	229;"	d
+FTS_AUTO_UPGRADE_EN	focaltech_config.h	224;"	d
+FTS_CHIP_IDC	focaltech_common.h	54;"	d
+FTS_CHIP_TYPE	focaltech_config.h	164;"	d
+FTS_CHIP_TYPE_MAPPING	focaltech_common.h	57;"	d
+FTS_CMD_APP_DATA_LEN_INCELL	focaltech_flash.h	62;"	d
+FTS_CMD_DATA_LEN	focaltech_flash.h	61;"	d
+FTS_CMD_DATA_LEN_LEN	focaltech_flash.h	63;"	d
+FTS_CMD_ECC_CAL	focaltech_flash.h	56;"	d
+FTS_CMD_ECC_CAL_LEN	focaltech_flash.h	57;"	d
+FTS_CMD_ECC_INIT	focaltech_flash.h	55;"	d
+FTS_CMD_ECC_READ	focaltech_flash.h	60;"	d
+FTS_CMD_ERASE_APP	focaltech_flash.h	44;"	d
+FTS_CMD_FLASH_MODE	focaltech_flash.h	39;"	d
+FTS_CMD_FLASH_STATUS	focaltech_flash.h	49;"	d
+FTS_CMD_FLASH_STATUS_ECC_OK	focaltech_flash.h	52;"	d
+FTS_CMD_FLASH_STATUS_ERASE_OK	focaltech_flash.h	53;"	d
+FTS_CMD_FLASH_STATUS_LEN	focaltech_flash.h	50;"	d
+FTS_CMD_FLASH_STATUS_NOP	focaltech_flash.h	51;"	d
+FTS_CMD_FLASH_STATUS_WRITE_OK	focaltech_flash.h	54;"	d
+FTS_CMD_FLASH_TYPE	focaltech_flash.h	38;"	d
+FTS_CMD_READ	focaltech_flash.h	34;"	d
+FTS_CMD_READ_DELAY	focaltech_flash.h	35;"	d
+FTS_CMD_READ_FW_CONF	focaltech_common.h	70;"	d
+FTS_CMD_READ_ID	focaltech_common.h	67;"	d
+FTS_CMD_READ_ID_LEN	focaltech_common.h	68;"	d
+FTS_CMD_READ_ID_LEN_INCELL	focaltech_common.h	69;"	d
+FTS_CMD_READ_LEN	focaltech_flash.h	36;"	d
+FTS_CMD_READ_LEN_SPI	focaltech_flash.h	37;"	d
+FTS_CMD_RESET	focaltech_flash.h	24;"	d
+FTS_CMD_SET_RFLASH_ADDR	focaltech_flash.h	65;"	d
+FTS_CMD_SET_WFLASH_ADDR	focaltech_flash.h	64;"	d
+FTS_CMD_START1	focaltech_common.h	64;"	d
+FTS_CMD_START2	focaltech_common.h	65;"	d
+FTS_CMD_START_DELAY	focaltech_common.h	66;"	d
+FTS_CMD_WRITE	focaltech_flash.h	67;"	d
+FTS_CMD_WRITE_LEN	focaltech_flash.h	70;"	d
+FTS_CONIFG_MODULEID_OFF	focaltech_flash.h	82;"	d
+FTS_CONIFG_PROJECTID_OFF	focaltech_flash.h	83;"	d
+FTS_CONIFG_VENDORID_OFF	focaltech_flash.h	81;"	d
+FTS_COORDS_ARR_SIZE	focaltech_core.h	88;"	d
+FTS_CSV_FILE_NAME	focaltech_test/focaltech_test.h	38;"	d
+FTS_DEBUG	focaltech_common.h	143;"	d
+FTS_DEBUG	focaltech_common.h	155;"	d
+FTS_DEBUG_EN	focaltech_config.h	173;"	d
+FTS_DELAY_PRAMBOOT_START	focaltech_flash.h	29;"	d
+FTS_DELAY_READ_ID	focaltech_flash.h	71;"	d
+FTS_DELAY_UPGRADE_AA	focaltech_flash.h	91;"	d
+FTS_DELAY_UPGRADE_RESET	focaltech_flash.h	72;"	d
+FTS_DRAM_SADDR	focaltech_flash.h	32;"	d
+FTS_DRIVER_NAME	focaltech_core.c	58;"	d	file:
+FTS_DRIVER_VERSION	focaltech_common.h	39;"	d
+FTS_ECC_FINISH_TIMEOUT	focaltech_flash.h	100;"	d
+FTS_ERASE_SECTOR_DELAY	focaltech_flash.h	46;"	d
+FTS_ERROR	focaltech_common.h	164;"	d
+FTS_ESDCHECK_EN	focaltech_config.h	197;"	d
+FTS_FLASH_PACKET_LENGTH	focaltech_flash.h	75;"	d
+FTS_FLASH_PACKET_LENGTH_SPI	focaltech_flash.c	46;"	d	file:
+FTS_FLASH_PACKET_LENGTH_SPI_LOW	focaltech_flash.c	45;"	d	file:
+FTS_FUNC_ENTER	focaltech_common.h	147;"	d
+FTS_FUNC_ENTER	focaltech_common.h	156;"	d
+FTS_FUNC_EXIT	focaltech_common.h	151;"	d
+FTS_FUNC_EXIT	focaltech_common.h	157;"	d
+FTS_FW_BIN_FILEPATH	focaltech_flash.h	94;"	d
+FTS_FW_IDE_SIG	focaltech_flash.h	95;"	d
+FTS_FW_IDE_SIG_LEN	focaltech_flash.h	96;"	d
+FTS_FW_NAME_PREX_WITH_REQUEST	focaltech_flash.c	43;"	d	file:
+FTS_FW_REQUEST_SUPPORT	focaltech_flash.c	41;"	d	file:
+FTS_GESTURE_DATA_LEN	focaltech_core.h	76;"	d
+FTS_GESTURE_EN	focaltech_config.h	191;"	d
+FTS_GESTURE_POINTS_MAX	focaltech_core.h	75;"	d
+FTS_GET_MODULE_NUM	focaltech_config.h	234;"	d
+FTS_HEADER_LEN	focaltech_flash.h	93;"	d
+FTS_HID_SUPPORTTED	focaltech_common.h	55;"	d
+FTS_I2C_VTG_MAX_UV	focaltech_core.c	65;"	d	file:
+FTS_I2C_VTG_MIN_UV	focaltech_core.c	64;"	d	file:
+FTS_INFO	focaltech_common.h	160;"	d
+FTS_INI_FILE_PATH	focaltech_test/focaltech_test.h	37;"	d
+FTS_INI_REQUEST_SUPPORT	focaltech_test/focaltech_test_ini.c	18;"	d	file:
+FTS_KEY_DIM	focaltech_core.h	71;"	d
+FTS_LEN_SET_ADDR	focaltech_flash.h	66;"	d
+FTS_MAX_ID	focaltech_core.h	78;"	d
+FTS_MAX_KEYS	focaltech_core.h	70;"	d
+FTS_MAX_LEN_APP	focaltech_flash.h	79;"	d
+FTS_MAX_LEN_ECC_CALC	focaltech_flash.h	76;"	d
+FTS_MAX_LEN_FILE	focaltech_flash.h	78;"	d
+FTS_MAX_LEN_SECTOR	focaltech_flash.h	80;"	d
+FTS_MAX_POINTS_SUPPORT	focaltech_core.h	69;"	d
+FTS_MAX_SORT_SC	focaltech_test/focaltech_test.h	180;"	d
+FTS_MIN_LEN	focaltech_flash.h	77;"	d
+FTS_MIN_SORT_SC	focaltech_test/focaltech_test.h	181;"	d
+FTS_MODULE2_ID	focaltech_config.h	244;"	d
+FTS_MODULE2_NAME	focaltech_config.h	256;"	d
+FTS_MODULE3_ID	focaltech_config.h	245;"	d
+FTS_MODULE3_NAME	focaltech_config.h	257;"	d
+FTS_MODULE_ID	focaltech_config.h	243;"	d
+FTS_MODULE_NAME	focaltech_config.h	255;"	d
+FTS_MT_PROTOCOL_B_EN	focaltech_config.h	179;"	d
+FTS_ONE_TCH_LEN	focaltech_core.h	72;"	d
+FTS_PATCH_COMERR_PM	focaltech_core.h	111;"	d
+FTS_PINCTRL_EN	focaltech_config.h	209;"	d
+FTS_POINT_REPORT_CHECK_EN	focaltech_common.h	116;"	d
+FTS_POWER_SOURCE_CUST_EN	focaltech_config.h	216;"	d
+FTS_PRAM_SADDR	focaltech_flash.h	31;"	d
+FTS_READ_BOOT_ID_TIMEOUT	focaltech_flash.c	44;"	d	file:
+FTS_REASE_APP_DELAY	focaltech_flash.h	45;"	d
+FTS_REG_CHARGER_MODE_EN	focaltech_common.h	92;"	d
+FTS_REG_CHIP_ID	focaltech_common.h	78;"	d
+FTS_REG_CHIP_ID2	focaltech_common.h	79;"	d
+FTS_REG_COVER_MODE_EN	focaltech_common.h	91;"	d
+FTS_REG_ESDCHECK_DISABLE	focaltech_common.h	77;"	d
+FTS_REG_ESD_SATURATE	focaltech_common.h	97;"	d
+FTS_REG_FACE_DEC_MODE_EN	focaltech_common.h	85;"	d
+FTS_REG_FACE_DEC_MODE_STATUS	focaltech_common.h	87;"	d
+FTS_REG_FACTORY_MODE_DETACH_FLAG	focaltech_common.h	86;"	d
+FTS_REG_FLOW_WORK_CNT	focaltech_common.h	73;"	d
+FTS_REG_FW_VER	focaltech_common.h	82;"	d
+FTS_REG_GESTURE_EN	focaltech_common.h	93;"	d
+FTS_REG_GESTURE_OUTPUT_ADDRESS	focaltech_common.h	94;"	d
+FTS_REG_GLOVE_MODE_EN	focaltech_common.h	90;"	d
+FTS_REG_IDE_PARA_STATUS	focaltech_common.h	89;"	d
+FTS_REG_IDE_PARA_VER_ID	focaltech_common.h	88;"	d
+FTS_REG_INT_CNT	focaltech_common.h	72;"	d
+FTS_REG_LCD_BUSY_NUM	focaltech_common.h	84;"	d
+FTS_REG_LIC_VER	focaltech_common.h	96;"	d
+FTS_REG_MODULE_ID	focaltech_common.h	95;"	d
+FTS_REG_POWER_MODE	focaltech_common.h	80;"	d
+FTS_REG_POWER_MODE_SLEEP	focaltech_common.h	81;"	d
+FTS_REG_UPGRADE	focaltech_flash.h	87;"	d
+FTS_REG_UPGRADE2	focaltech_flash.h	88;"	d
+FTS_REG_VENDOR_ID	focaltech_common.h	83;"	d
+FTS_REG_WORKMODE	focaltech_common.h	74;"	d
+FTS_REG_WORKMODE_FACTORY_VALUE	focaltech_common.h	75;"	d
+FTS_REG_WORKMODE_WORK_VALUE	focaltech_common.h	76;"	d
+FTS_REPORT_PRESSURE_EN	focaltech_config.h	185;"	d
+FTS_RETRIES_DELAY_ECC_CAL	focaltech_flash.h	59;"	d
+FTS_RETRIES_DELAY_REASE	focaltech_flash.h	48;"	d
+FTS_RETRIES_DELAY_WRITE	focaltech_flash.h	69;"	d
+FTS_RETRIES_ECC_CAL	focaltech_flash.h	58;"	d
+FTS_RETRIES_REASE	focaltech_flash.h	47;"	d
+FTS_RETRIES_WRITE	focaltech_flash.h	68;"	d
+FTS_ROMBOOT_CMD_ECC	focaltech_flash.h	30;"	d
+FTS_ROMBOOT_CMD_ECC_FINISH	focaltech_flash.h	101;"	d
+FTS_ROMBOOT_CMD_ECC_FINISH_OK_00	focaltech_flash.h	103;"	d
+FTS_ROMBOOT_CMD_ECC_FINISH_OK_A5	focaltech_flash.h	102;"	d
+FTS_ROMBOOT_CMD_ECC_NEW_LEN	focaltech_flash.h	99;"	d
+FTS_ROMBOOT_CMD_ECC_READ	focaltech_flash.h	104;"	d
+FTS_ROMBOOT_CMD_SET_PRAM_ADDR	focaltech_flash.h	25;"	d
+FTS_ROMBOOT_CMD_SET_PRAM_ADDR_LEN	focaltech_flash.h	26;"	d
+FTS_ROMBOOT_CMD_START_APP	focaltech_flash.h	28;"	d
+FTS_ROMBOOT_CMD_WRITE	focaltech_flash.h	27;"	d
+FTS_RUN_IN_APP	focaltech_flash.h	/^    FTS_RUN_IN_APP,$/;"	e	enum:FW_STATUS
+FTS_RUN_IN_BOOTLOADER	focaltech_flash.h	/^    FTS_RUN_IN_BOOTLOADER,$/;"	e	enum:FW_STATUS
+FTS_RUN_IN_ERROR	focaltech_flash.h	/^    FTS_RUN_IN_ERROR,$/;"	e	enum:FW_STATUS
+FTS_RUN_IN_PRAM	focaltech_flash.h	/^    FTS_RUN_IN_PRAM,$/;"	e	enum:FW_STATUS
+FTS_RUN_IN_ROM	focaltech_flash.h	/^    FTS_RUN_IN_ROM,$/;"	e	enum:FW_STATUS
+FTS_SUSPEND_LEVEL	focaltech_core.c	51;"	d	file:
+FTS_SYSFS_ECHO_OFF	focaltech_common.h	100;"	d
+FTS_SYSFS_ECHO_ON	focaltech_common.h	99;"	d
+FTS_TEST_DBG	focaltech_test/focaltech_test.h	603;"	d
+FTS_TEST_EN	focaltech_config.h	203;"	d
+FTS_TEST_ERROR	focaltech_test/focaltech_test.h	619;"	d
+FTS_TEST_FUNC_ENTER	focaltech_test/focaltech_test.h	607;"	d
+FTS_TEST_FUNC_EXIT	focaltech_test/focaltech_test.h	611;"	d
+FTS_TEST_INFO	focaltech_test/focaltech_test.h	615;"	d
+FTS_TEST_SAVE_ERR	focaltech_test/focaltech_test.h	632;"	d
+FTS_TEST_SAVE_INFO	focaltech_test/focaltech_test.h	623;"	d
+FTS_TIMEOUT_COMERR_PM	focaltech_core.h	112;"	d
+FTS_TOUCH_AREA_POS	focaltech_core.h	84;"	d
+FTS_TOUCH_CONTACT	focaltech_core.h	96;"	d
+FTS_TOUCH_DATA_LEN	focaltech_core.h	73;"	d
+FTS_TOUCH_DOWN	focaltech_core.h	94;"	d
+FTS_TOUCH_EVENT_POS	focaltech_core.h	86;"	d
+FTS_TOUCH_ID_POS	focaltech_core.h	87;"	d
+FTS_TOUCH_POINT_NUM	focaltech_core.h	85;"	d
+FTS_TOUCH_PRE_POS	focaltech_core.h	83;"	d
+FTS_TOUCH_UP	focaltech_core.h	95;"	d
+FTS_TOUCH_X_H_POS	focaltech_core.h	79;"	d
+FTS_TOUCH_X_L_POS	focaltech_core.h	80;"	d
+FTS_TOUCH_Y_H_POS	focaltech_core.h	81;"	d
+FTS_TOUCH_Y_L_POS	focaltech_core.h	82;"	d
+FTS_TXT_FILE_NAME	focaltech_test/focaltech_test.h	39;"	d
+FTS_UPGRADE_55	focaltech_flash.h	90;"	d
+FTS_UPGRADE_AA	focaltech_flash.h	89;"	d
+FTS_UPGRADE_FW2_FILE	focaltech_config.h	270;"	d
+FTS_UPGRADE_FW3_FILE	focaltech_config.h	276;"	d
+FTS_UPGRADE_FW_FILE	focaltech_config.h	264;"	d
+FTS_UPGRADE_LOOP	focaltech_flash.h	92;"	d
+FTS_VTG_MAX_UV	focaltech_core.c	63;"	d	file:
+FTS_VTG_MIN_UV	focaltech_core.c	62;"	d	file:
+FTS_X_MAX_DISPLAY_DEFAULT	focaltech_core.h	91;"	d
+FTS_X_MIN_DISPLAY_DEFAULT	focaltech_core.h	89;"	d
+FTS_Y_MAX_DISPLAY_DEFAULT	focaltech_core.h	92;"	d
+FTS_Y_MIN_DISPLAY_DEFAULT	focaltech_core.h	90;"	d
+FTX_MAX_COMMMAND_LENGTH	focaltech_core.h	102;"	d
+FTX_MAX_COMPATIBLE_TYPE	focaltech_core.h	101;"	d
+FW_FLASH_MODE	focaltech_flash.h	/^enum FW_FLASH_MODE {$/;"	g
+FW_STATUS	focaltech_flash.h	/^enum FW_STATUS {$/;"	g
+GESTURE_C	focaltech_gesture.c	68;"	d	file:
+GESTURE_DOUBLECLICK	focaltech_gesture.c	59;"	d	file:
+GESTURE_DOWN	focaltech_gesture.c	58;"	d	file:
+GESTURE_E	focaltech_gesture.c	63;"	d	file:
+GESTURE_L	focaltech_gesture.c	64;"	d	file:
+GESTURE_LEFT	focaltech_gesture.c	55;"	d	file:
+GESTURE_M	focaltech_gesture.c	62;"	d	file:
+GESTURE_O	focaltech_gesture.c	60;"	d	file:
+GESTURE_RIGHT	focaltech_gesture.c	56;"	d	file:
+GESTURE_S	focaltech_gesture.c	65;"	d	file:
+GESTURE_UP	focaltech_gesture.c	57;"	d	file:
+GESTURE_V	focaltech_gesture.c	66;"	d	file:
+GESTURE_W	focaltech_gesture.c	61;"	d	file:
+GESTURE_Z	focaltech_gesture.c	67;"	d	file:
+HIGH_SENSITIVITY	focaltech_test/focaltech_test.h	/^    HIGH_SENSITIVITY = 2,$/;"	e	enum:wp_type
+HOV	focaltech_test/focaltech_test.h	/^    HOV = 3,$/;"	e	enum:wp_type
+IC_CODE_OFFSET	focaltech_test/focaltech_test_ini.h	26;"	d
+IC_HW_INCELL	focaltech_test/focaltech_test.h	/^    IC_HW_INCELL = 1,$/;"	e	enum:test_hw_type
+IC_HW_MC_SC	focaltech_test/focaltech_test.h	/^    IC_HW_MC_SC,$/;"	e	enum:test_hw_type
+IC_HW_SC	focaltech_test/focaltech_test.h	/^    IC_HW_SC,$/;"	e	enum:test_hw_type
+IC_SERIALS	focaltech_common.h	52;"	d
+IC_TO_SERIALS	focaltech_common.h	53;"	d
+INTERVAL_READ_REG	focaltech_core.c	59;"	d	file:
+INVALID	focaltech_common.h	63;"	d
+KEY_GESTURE_C	focaltech_gesture.c	52;"	d	file:
+KEY_GESTURE_DOWN	focaltech_gesture.c	42;"	d	file:
+KEY_GESTURE_E	focaltech_gesture.c	46;"	d	file:
+KEY_GESTURE_L	focaltech_gesture.c	48;"	d	file:
+KEY_GESTURE_LEFT	focaltech_gesture.c	43;"	d	file:
+KEY_GESTURE_M	focaltech_gesture.c	47;"	d	file:
+KEY_GESTURE_O	focaltech_gesture.c	45;"	d	file:
+KEY_GESTURE_RIGHT	focaltech_gesture.c	44;"	d	file:
+KEY_GESTURE_S	focaltech_gesture.c	50;"	d	file:
+KEY_GESTURE_U	focaltech_gesture.c	40;"	d	file:
+KEY_GESTURE_UP	focaltech_gesture.c	41;"	d	file:
+KEY_GESTURE_V	focaltech_gesture.c	51;"	d	file:
+KEY_GESTURE_W	focaltech_gesture.c	49;"	d	file:
+KEY_GESTURE_Z	focaltech_gesture.c	53;"	d	file:
+KEY_NUM_MAX	focaltech_test/focaltech_test.h	65;"	d
+LCD_ESD_PATCH	focaltech_esdcheck.c	47;"	d	file:
+LINE_KEYWORD	focaltech_test/focaltech_test_ini.h	/^    LINE_KEYWORD = 2 ,$/;"	e	enum:line_type
+LINE_OTHER	focaltech_test/focaltech_test_ini.h	/^    LINE_OTHER = 3,$/;"	e	enum:line_type
+LINE_SECTION	focaltech_test/focaltech_test_ini.h	/^    LINE_SECTION = 1,$/;"	e	enum:line_type
+MAPPING	focaltech_test/focaltech_test.h	/^    MAPPING = 0,$/;"	e	enum:mapping_type
+MAX_IC_NAME_LEN	focaltech_test/focaltech_test_ini.h	24;"	d
+MAX_INI_LINE_LEN	focaltech_test/focaltech_test_ini.h	22;"	d
+MAX_INI_SECTION_NUM	focaltech_test/focaltech_test_ini.h	23;"	d
+MAX_KEYWORD_NAME_LEN	focaltech_test/focaltech_test_ini.h	19;"	d
+MAX_KEYWORD_NUM	focaltech_test/focaltech_test_ini.h	18;"	d
+MAX_KEYWORD_VALUE_LEN	focaltech_test/focaltech_test_ini.h	20;"	d
+MAX_KEYWORD_VALUE_ONE_LEN	focaltech_test/focaltech_test_ini.h	21;"	d
+MAX_MODULE_VENDOR_NAME_LEN	focaltech_flash.h	97;"	d
+MAX_TEST_ITEM	focaltech_test/focaltech_test_ini.h	25;"	d
+MODE_CHARGER	focaltech_ex_mode.c	/^    MODE_CHARGER,$/;"	e	enum:_ex_mode	file:
+MODE_COVER	focaltech_ex_mode.c	/^    MODE_COVER,$/;"	e	enum:_ex_mode	file:
+MODE_GLOVE	focaltech_ex_mode.c	/^    MODE_GLOVE = 0,$/;"	e	enum:_ex_mode	file:
+NORMALIZE_AUTO	focaltech_test/focaltech_test.h	/^    NORMALIZE_AUTO,$/;"	e	enum:normalize_type
+NORMALIZE_OVERALL	focaltech_test/focaltech_test.h	/^    NORMALIZE_OVERALL,$/;"	e	enum:normalize_type
+NO_MAPPING	focaltech_test/focaltech_test.h	/^    NO_MAPPING = 1,$/;"	e	enum:mapping_type
+NUM_MAX_SC	focaltech_test/focaltech_test.h	64;"	d
+POINT_REPORT_CHECK_WAIT_TIME	focaltech_point_report_check.c	43;"	d	file:
+PRAMBOOT_MAX_SIZE	focaltech_flash.h	74;"	d
+PRAMBOOT_MIN_SIZE	focaltech_flash.h	73;"	d
+PROC_AUTOCLB	focaltech_ex_fun.c	43;"	d	file:
+PROC_BUF_SIZE	focaltech_ex_fun.c	54;"	d	file:
+PROC_ENTER_TEST_ENVIRONMENT	focaltech_ex_fun.c	52;"	d	file:
+PROC_HW_RESET	focaltech_ex_fun.c	49;"	d	file:
+PROC_NAME	focaltech_ex_fun.c	53;"	d	file:
+PROC_READ_DATA	focaltech_ex_fun.c	46;"	d	file:
+PROC_READ_REGISTER	focaltech_ex_fun.c	41;"	d	file:
+PROC_READ_STATUS	focaltech_ex_fun.c	50;"	d	file:
+PROC_SET_BOOT_MODE	focaltech_ex_fun.c	51;"	d	file:
+PROC_SET_SLAVE_ADDR	focaltech_ex_fun.c	48;"	d	file:
+PROC_SET_TEST_FLAG	focaltech_ex_fun.c	47;"	d	file:
+PROC_UPGRADE	focaltech_ex_fun.c	40;"	d	file:
+PROC_UPGRADE_INFO	focaltech_ex_fun.c	44;"	d	file:
+PROC_WRITE_DATA	focaltech_ex_fun.c	45;"	d	file:
+PROC_WRITE_REGISTER	focaltech_ex_fun.c	42;"	d	file:
+READ_CMD	focaltech_spi.c	48;"	d	file:
+REG_FW_VERSION	focaltech_test/focaltech_test.h	82;"	d
+REG_VA_TOUCH_THR	focaltech_test/focaltech_test.h	83;"	d
+REG_VKEY_TOUCH_THR	focaltech_test/focaltech_test.h	84;"	d
+RESULT_NG	focaltech_test/focaltech_test.h	59;"	d
+RESULT_NULL	focaltech_test/focaltech_test.h	57;"	d
+RESULT_PASS	focaltech_test/focaltech_test.h	58;"	d
+RWREG_OP_READ	focaltech_ex_fun.c	/^    RWREG_OP_READ = 0,$/;"	e	enum:__anon1	file:
+RWREG_OP_WRITE	focaltech_ex_fun.c	/^    RWREG_OP_WRITE = 1,$/;"	e	enum:__anon1	file:
+RX_NUM_MAX	focaltech_test/focaltech_test.h	62;"	d
+SCAN_NORMAL	focaltech_test/focaltech_test.h	/^    SCAN_NORMAL = 0,$/;"	e	enum:test_scan_mode
+SCAN_SC	focaltech_test/focaltech_test.h	/^    SCAN_SC,$/;"	e	enum:test_scan_mode
+SC_NUM_MAX	focaltech_test/focaltech_test.h	63;"	d
+SPI_BUF_LENGTH	focaltech_spi.c	44;"	d	file:
+SPI_DUMMY_BYTE	focaltech_spi.c	50;"	d	file:
+SPI_HEADER_LENGTH	focaltech_spi.c	51;"	d	file:
+SPI_RETRY_NUMBER	focaltech_spi.c	42;"	d	file:
+START_SCAN_RETRIES_DELAY_INCELL	focaltech_test/focaltech_test.h	76;"	d
+START_SCAN_RETRIES_INCELL	focaltech_test/focaltech_test.h	75;"	d
+TEST_ICSERIES	focaltech_test/focaltech_test.h	43;"	d
+TEST_ICSERIES_LEN	focaltech_test/focaltech_test.h	42;"	d
+TEST_ITEM_COUNT_MAX	focaltech_test/focaltech_test.h	66;"	d
+TEST_ITEM_INCELL	focaltech_test/focaltech_test_ini.h	65;"	d
+TEST_ITEM_MC_SC	focaltech_test/focaltech_test_ini.h	86;"	d
+TEST_ITEM_NAME_MAX	focaltech_test/focaltech_test.h	67;"	d
+TEST_ITEM_SC	focaltech_test/focaltech_test_ini.h	112;"	d
+TEST_OPEN_MAX_VALUE	focaltech_test/focaltech_test.h	45;"	d
+TEST_RETVAL_00	focaltech_test/focaltech_test.h	177;"	d
+TEST_RETVAL_AA	focaltech_test/focaltech_test.h	178;"	d
+TEST_SAVE_FAIL_RESULT	focaltech_test/focaltech_test.h	52;"	d
+TEST_SHORT_RES_MAX	focaltech_test/focaltech_test.h	68;"	d
+TIMEOUT_READ_REG	focaltech_core.c	60;"	d	file:
+TOLOWER	focaltech_test/focaltech_test_ini.c	166;"	d	file:
+TXT_BUFFER_LEN	focaltech_test/focaltech_test.h	50;"	d
+TXT_SUPPORT	focaltech_test/focaltech_test.h	601;"	d
+TX_NUM_MAX	focaltech_test/focaltech_test.h	61;"	d
+UPGRADE_SPEC	focaltech_flash.h	/^enum UPGRADE_SPEC {$/;"	g
+UPGRADE_SPEC_V_1_0	focaltech_flash.h	/^    UPGRADE_SPEC_V_1_0 = 0x0100,$/;"	e	enum:UPGRADE_SPEC
+VALID	focaltech_common.h	62;"	d
+WATER_PROOF_OFF	focaltech_test/focaltech_test.h	/^    WATER_PROOF_OFF = 0,$/;"	e	enum:wp_type
+WATER_PROOF_OFF_RX	focaltech_test/focaltech_test.h	/^    WATER_PROOF_OFF_RX,$/;"	e	enum:wp_type
+WATER_PROOF_OFF_TX	focaltech_test/focaltech_test.h	/^    WATER_PROOF_OFF_TX,$/;"	e	enum:wp_type
+WATER_PROOF_ON	focaltech_test/focaltech_test.h	/^    WATER_PROOF_ON = 1,$/;"	e	enum:wp_type
+WATER_PROOF_ON_RX	focaltech_test/focaltech_test.h	/^    WATER_PROOF_ON_RX,$/;"	e	enum:wp_type
+WATER_PROOF_ON_TX	focaltech_test/focaltech_test.h	/^    WATER_PROOF_ON_TX = 100,$/;"	e	enum:wp_type
+WRITE_CMD	focaltech_spi.c	47;"	d	file:
+_FT3067	focaltech_config.h	134;"	d
+_FT3068	focaltech_config.h	135;"	d
+_FT3168	focaltech_config.h	136;"	d
+_FT3267	focaltech_config.h	101;"	d
+_FT3268	focaltech_config.h	137;"	d
+_FT3308	focaltech_config.h	129;"	d
+_FT3327	focaltech_config.h	79;"	d
+_FT3367	focaltech_config.h	102;"	d
+_FT3417	focaltech_config.h	77;"	d
+_FT3417U	focaltech_config.h	122;"	d
+_FT3418	focaltech_config.h	118;"	d
+_FT3427	focaltech_config.h	80;"	d
+_FT3427G_003	focaltech_config.h	105;"	d
+_FT3427_003	focaltech_config.h	104;"	d
+_FT3428	focaltech_config.h	124;"	d
+_FT3437U	focaltech_config.h	125;"	d
+_FT3517	focaltech_config.h	78;"	d
+_FT3517U	focaltech_config.h	93;"	d
+_FT3518	focaltech_config.h	112;"	d
+_FT3518U	focaltech_config.h	113;"	d
+_FT3528	focaltech_config.h	115;"	d
+_FT3558	focaltech_config.h	114;"	d
+_FT3617	focaltech_config.h	90;"	d
+_FT3618	focaltech_config.h	143;"	d
+_FT3658U	focaltech_config.h	157;"	d
+_FT3717	focaltech_config.h	91;"	d
+_FT3817B	focaltech_config.h	92;"	d
+_FT3A58	focaltech_config.h	145;"	d
+_FT3B58	focaltech_config.h	146;"	d
+_FT3C47U	focaltech_config.h	76;"	d
+_FT3D47	focaltech_config.h	89;"	d
+_FT3D58	focaltech_config.h	147;"	d
+_FT5346	focaltech_config.h	69;"	d
+_FT5346I	focaltech_config.h	71;"	d
+_FT5416	focaltech_config.h	62;"	d
+_FT5426	focaltech_config.h	63;"	d
+_FT5426U	focaltech_config.h	123;"	d
+_FT5426_003	focaltech_config.h	109;"	d
+_FT5435	focaltech_config.h	64;"	d
+_FT5436	focaltech_config.h	65;"	d
+_FT5446	focaltech_config.h	68;"	d
+_FT5446I	focaltech_config.h	70;"	d
+_FT5446U	focaltech_config.h	120;"	d
+_FT5446_003	focaltech_config.h	106;"	d
+_FT5446_P03	focaltech_config.h	108;"	d
+_FT5446_Q03	focaltech_config.h	107;"	d
+_FT5456U	focaltech_config.h	121;"	d
+_FT5526	focaltech_config.h	66;"	d
+_FT5526I	focaltech_config.h	67;"	d
+_FT5526_003	focaltech_config.h	110;"	d
+_FT5526_V00	focaltech_config.h	82;"	d
+_FT5536	focaltech_config.h	116;"	d
+_FT5536L	focaltech_config.h	117;"	d
+_FT5626	focaltech_config.h	84;"	d
+_FT5646	focaltech_config.h	144;"	d
+_FT5726	focaltech_config.h	85;"	d
+_FT5726_003	focaltech_config.h	140;"	d
+_FT5726_V03	focaltech_config.h	141;"	d
+_FT5826B	focaltech_config.h	86;"	d
+_FT5826S	focaltech_config.h	87;"	d
+_FT5936	focaltech_config.h	148;"	d
+_FT5946	focaltech_config.h	152;"	d
+_FT5A36	focaltech_config.h	149;"	d
+_FT5A46	focaltech_config.h	153;"	d
+_FT5B36	focaltech_config.h	150;"	d
+_FT5B46	focaltech_config.h	154;"	d
+_FT5D36	focaltech_config.h	151;"	d
+_FT5D46	focaltech_config.h	155;"	d
+_FT6146	focaltech_config.h	138;"	d
+_FT6236U	focaltech_config.h	95;"	d
+_FT6336G	focaltech_config.h	96;"	d
+_FT6336U	focaltech_config.h	97;"	d
+_FT6346G	focaltech_config.h	133;"	d
+_FT6346U	focaltech_config.h	132;"	d
+_FT6436T	focaltech_config.h	99;"	d
+_FT6436U	focaltech_config.h	98;"	d
+_FT6446	focaltech_config.h	130;"	d
+_FT7120	focaltech_config.h	57;"	d
+_FT7202	focaltech_config.h	128;"	d
+_FT7250	focaltech_config.h	56;"	d
+_FT7251	focaltech_config.h	48;"	d
+_FT7252	focaltech_config.h	49;"	d
+_FT7302	focaltech_config.h	127;"	d
+_FT7311	focaltech_config.h	81;"	d
+_FT7421	focaltech_config.h	74;"	d
+_FT7511	focaltech_config.h	73;"	d
+_FT7661	focaltech_config.h	72;"	d
+_FT7681	focaltech_config.h	75;"	d
+_FT7811	focaltech_config.h	88;"	d
+_FT8006M	focaltech_config.h	38;"	d
+_FT8006P	focaltech_config.h	47;"	d
+_FT8006S	focaltech_config.h	41;"	d
+_FT8006S_AA	focaltech_config.h	55;"	d
+_FT8006U	focaltech_config.h	40;"	d
+_FT8009	focaltech_config.h	53;"	d
+_FT8016	focaltech_config.h	59;"	d
+_FT8201	focaltech_config.h	46;"	d
+_FT8302	focaltech_config.h	52;"	d
+_FT8607	focaltech_config.h	39;"	d
+_FT8613	focaltech_config.h	42;"	d
+_FT8613S	focaltech_config.h	50;"	d
+_FT8615	focaltech_config.h	45;"	d
+_FT8656	focaltech_config.h	54;"	d
+_FT8716	focaltech_config.h	36;"	d
+_FT8719	focaltech_config.h	43;"	d
+_FT8720	focaltech_config.h	58;"	d
+_FT8736	focaltech_config.h	37;"	d
+_FT8739	focaltech_config.h	44;"	d
+_FT8756	focaltech_config.h	51;"	d
+_FTS_BUS_TYPE	focaltech_core.h	/^enum _FTS_BUS_TYPE {$/;"	g
+_INI_H	focaltech_test/focaltech_test_ini.h	14;"	d
+_LINUX_FOCLATECH_CONFIG_H_	focaltech_config.h	31;"	d
+_TEST_LIB_H	focaltech_test/focaltech_test.h	14;"	d
+__LINUX_FOCALTECH_COMMON_H__	focaltech_common.h	32;"	d
+__LINUX_FOCALTECH_CORE_H__	focaltech_core.h	32;"	d
+__LINUX_FOCALTECH_FLASH_H__	focaltech_flash.h	14;"	d
+_ex_mode	focaltech_ex_mode.c	/^enum _ex_mode {$/;"	g	file:
+active_panel	focaltech_core.c	/^static struct drm_panel *active_panel;$/;"	v	typeref:struct:drm_panel	file:
+app2_offset	focaltech_flash.h	/^    u32 app2_offset;$/;"	m	struct:upgrade_setting_nf
+appoff	focaltech_flash.h	/^    u32 appoff;$/;"	m	struct:upgrade_func
+appoff_handle_in_ic	focaltech_flash.h	/^    bool appoff_handle_in_ic;$/;"	m	struct:upgrade_func
+area	focaltech_core.h	/^    int area;$/;"	m	struct:ts_event
+basic	focaltech_test/focaltech_test.h	/^    struct incell_threshold_b basic;$/;"	m	struct:incell_threshold	typeref:struct:incell_threshold::incell_threshold_b
+basic	focaltech_test/focaltech_test.h	/^    struct mc_sc_threshold_b basic;$/;"	m	struct:mc_sc_threshold	typeref:struct:mc_sc_threshold::mc_sc_threshold_b
+basic	focaltech_test/focaltech_test.h	/^    struct sc_threshold_b basic;$/;"	m	struct:sc_threshold	typeref:struct:sc_threshold::sc_threshold_b
+basic_thr_count	focaltech_test/focaltech_test.h	/^    int basic_thr_count;$/;"	m	struct:fts_test
+bl_idh	focaltech_common.h	/^    u8 bl_idh;$/;"	m	struct:ft_chip_t
+bl_idl	focaltech_common.h	/^    u8 bl_idl;$/;"	m	struct:ft_chip_t
+bthr_name_incell	focaltech_test/focaltech_test_ini.c	/^static char bthr_name_incell[][MAX_KEYWORD_NAME_LEN] = BASIC_THRESHOLD_INCELL;$/;"	v	file:
+bthr_name_mc_sc	focaltech_test/focaltech_test_ini.c	/^static char bthr_name_mc_sc[][MAX_KEYWORD_NAME_LEN] = BASIC_THRESHOLD_MC_SC;$/;"	v	file:
+bthr_name_sc	focaltech_test/focaltech_test_ini.c	/^static char bthr_name_sc[][MAX_KEYWORD_NAME_LEN] = BASIC_THRESHOLD_SC;$/;"	v	file:
+buffer	focaltech_test/focaltech_test.h	/^    int *buffer;$/;"	m	struct:fts_test
+buffer_length	focaltech_test/focaltech_test.h	/^    int buffer_length;$/;"	m	struct:fts_test
+bus_lock	focaltech_core.h	/^    struct mutex bus_lock;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::mutex
+bus_rx_buf	focaltech_core.h	/^    u8 *bus_rx_buf;$/;"	m	struct:fts_ts_data
+bus_tx_buf	focaltech_core.h	/^    u8 *bus_tx_buf;$/;"	m	struct:fts_ts_data
+bus_type	focaltech_core.h	/^    int bus_type;$/;"	m	struct:fts_ts_data
+byte_mode	focaltech_test/focaltech_test.h	/^enum byte_mode {$/;"	g
+cb_max	focaltech_test/focaltech_test.h	/^    int *cb_max;$/;"	m	struct:incell_threshold
+cb_max	focaltech_test/focaltech_test.h	/^    int *cb_max;$/;"	m	struct:sc_threshold
+cb_max	focaltech_test/focaltech_test.h	/^    int cb_max;$/;"	m	struct:incell_threshold_b
+cb_max	focaltech_test/focaltech_test.h	/^    int cb_max;$/;"	m	struct:sc_threshold_b
+cb_max_vk	focaltech_test/focaltech_test.h	/^    int cb_max_vk;$/;"	m	struct:incell_threshold_b
+cb_min	focaltech_test/focaltech_test.h	/^    int *cb_min;$/;"	m	struct:incell_threshold
+cb_min	focaltech_test/focaltech_test.h	/^    int *cb_min;$/;"	m	struct:sc_threshold
+cb_min	focaltech_test/focaltech_test.h	/^    int cb_min;$/;"	m	struct:incell_threshold_b
+cb_min	focaltech_test/focaltech_test.h	/^    int cb_min;$/;"	m	struct:sc_threshold_b
+cb_min_vk	focaltech_test/focaltech_test.h	/^    int cb_min_vk;$/;"	m	struct:incell_threshold_b
+cb_test	focaltech_test/focaltech_test.h	/^    u32 cb_test                     : 1;$/;"	m	struct:incell_testitem
+cb_test	focaltech_test/focaltech_test.h	/^    u32 cb_test                     : 1;$/;"	m	struct:sc_testitem
+cb_vkey_check	focaltech_test/focaltech_test.h	/^    int cb_vkey_check;$/;"	m	struct:incell_threshold_b
+ch_num	focaltech_test/focaltech_test.h	/^    int ch_num;$/;"	m	struct:dcb_sort_d
+channel_num	focaltech_test/focaltech_test.h	/^    int channel_num;$/;"	m	struct:fts_test_node
+charger_mode	focaltech_core.h	/^    bool charger_mode;$/;"	m	struct:fts_ts_data
+chip_clb	focaltech_test/focaltech_test.c	/^int chip_clb(void)$/;"	f
+chip_idh	focaltech_common.h	/^    u8 chip_idh;$/;"	m	struct:ft_chip_t
+chip_idl	focaltech_common.h	/^    u8 chip_idl;$/;"	m	struct:ft_chip_t
+client	focaltech_core.h	/^    struct i2c_client *client;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::i2c_client
+cmd	focaltech_core.h	/^    u8 cmd[FTX_MAX_COMMMAND_LENGTH];$/;"	m	struct:ftxxxx_proc
+cmd_len	focaltech_core.h	/^    u8 cmd_len;$/;"	m	struct:ftxxxx_proc
+code	focaltech_test/focaltech_test.h	/^    int code;$/;"	m	struct:item_info
+code1	focaltech_test/focaltech_test.h	/^    int code1;$/;"	m	struct:fts_test
+code2	focaltech_test/focaltech_test.h	/^    int code2;$/;"	m	struct:fts_test
+compare_array	focaltech_test/focaltech_test.c	/^bool compare_array(int *data, int *min, int *max, bool key)$/;"	f
+compare_data	focaltech_test/focaltech_test.c	/^bool compare_data(int *data, int min, int max, int min_vk, int max_vk, bool key)$/;"	f
+compare_mc_sc	focaltech_test/focaltech_test.c	/^bool compare_mc_sc(bool tx_check, bool rx_check, int *data, int *min, int *max)$/;"	f
+coordinate_x	focaltech_gesture.c	/^    u16 coordinate_x[FTS_GESTURE_POINTS_MAX];$/;"	m	struct:fts_gesture_st	file:
+coordinate_y	focaltech_gesture.c	/^    u16 coordinate_y[FTS_GESTURE_POINTS_MAX];$/;"	m	struct:fts_gesture_st	file:
+cover_mode	focaltech_core.h	/^    bool cover_mode;$/;"	m	struct:fts_ts_data
+crckermit	focaltech_spi.c	/^static void crckermit(u8 *data, u32 len, u16 *crc_out)$/;"	f	file:
+critical	focaltech_test/focaltech_test.h	/^    int critical;$/;"	m	struct:dcb_sort_d
+csv_itemcode_incell	focaltech_test/focaltech_test.h	/^enum csv_itemcode_incell {$/;"	g
+csv_itemcode_mc_sc	focaltech_test/focaltech_test.h	/^enum csv_itemcode_mc_sc {$/;"	g
+csv_itemcode_sc	focaltech_test/focaltech_test.h	/^enum csv_itemcode_sc {$/;"	g
+ctype	focaltech_flash.h	/^    u64 ctype[FTX_MAX_COMPATIBLE_TYPE];$/;"	m	struct:upgrade_func
+ctype	focaltech_test/focaltech_test.h	/^    u64 ctype[FTX_MAX_COMPATIBLE_TYPE];$/;"	m	struct:test_funcs
+data	focaltech_test/focaltech_test.h	/^    int *data;$/;"	m	struct:item_info
+data	focaltech_test/focaltech_test_ini.h	/^    char *data;$/;"	m	struct:ini_data
+dataerror_cnt	focaltech_esdcheck.c	/^    u32     dataerror_cnt;$/;"	m	struct:fts_esdcheck_st	file:
+datalen	focaltech_test/focaltech_test.h	/^    int datalen;$/;"	m	struct:item_info
+dcb_base	focaltech_test/focaltech_test.h	/^    int *dcb_base;$/;"	m	struct:sc_threshold
+dcb_base	focaltech_test/focaltech_test.h	/^    int dcb_base;$/;"	m	struct:sc_threshold_b
+dcb_critical_check	focaltech_test/focaltech_test.h	/^    int dcb_critical_check;$/;"	m	struct:sc_threshold_b
+dcb_cs1	focaltech_test/focaltech_test.h	/^    int dcb_cs1;$/;"	m	struct:sc_threshold_b
+dcb_cs2	focaltech_test/focaltech_test.h	/^    int dcb_cs2;$/;"	m	struct:sc_threshold_b
+dcb_cs3	focaltech_test/focaltech_test.h	/^    int dcb_cs3;$/;"	m	struct:sc_threshold_b
+dcb_cs4	focaltech_test/focaltech_test.h	/^    int dcb_cs4;$/;"	m	struct:sc_threshold_b
+dcb_cs5	focaltech_test/focaltech_test.h	/^    int dcb_cs5;$/;"	m	struct:sc_threshold_b
+dcb_cs6	focaltech_test/focaltech_test.h	/^    int dcb_cs6;$/;"	m	struct:sc_threshold_b
+dcb_differ_max	focaltech_test/focaltech_test.h	/^    int dcb_differ_max;$/;"	m	struct:sc_threshold_b
+dcb_ds1	focaltech_test/focaltech_test.h	/^    int dcb_ds1;$/;"	m	struct:sc_threshold_b
+dcb_ds2	focaltech_test/focaltech_test.h	/^    int dcb_ds2;$/;"	m	struct:sc_threshold_b
+dcb_ds3	focaltech_test/focaltech_test.h	/^    int dcb_ds3;$/;"	m	struct:sc_threshold_b
+dcb_ds4	focaltech_test/focaltech_test.h	/^    int dcb_ds4;$/;"	m	struct:sc_threshold_b
+dcb_ds5	focaltech_test/focaltech_test.h	/^    int dcb_ds5;$/;"	m	struct:sc_threshold_b
+dcb_ds6	focaltech_test/focaltech_test.h	/^    int dcb_ds6;$/;"	m	struct:sc_threshold_b
+dcb_key_check	focaltech_test/focaltech_test.h	/^    int dcb_key_check;$/;"	m	struct:sc_threshold_b
+dcb_key_differ_max	focaltech_test/focaltech_test.h	/^    int dcb_key_differ_max;$/;"	m	struct:sc_threshold_b
+dcb_sort	focaltech_test/focaltech_test.h	/^    int *dcb_sort;$/;"	m	struct:sc_threshold
+dcb_sort_d	focaltech_test/focaltech_test.h	/^struct dcb_sort_d {$/;"	s
+dcb_sort_num	focaltech_test/focaltech_test.h	/^enum dcb_sort_num {$/;"	g
+delay_init	focaltech_flash.h	/^    u8 delay_init;$/;"	m	struct:upgrade_setting_nf
+delta_cb_test	focaltech_test/focaltech_test.h	/^    u32 delta_cb_test               : 1;$/;"	m	struct:sc_testitem
+dev	focaltech_core.h	/^    struct device *dev;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::device
+deviation	focaltech_test/focaltech_test.h	/^    int deviation;$/;"	m	struct:dcb_sort_d
+drm_check_dt	focaltech_core.c	/^static int drm_check_dt(struct device_node *np)$/;"	f	file:
+drm_notifier_callback	focaltech_core.c	/^static int drm_notifier_callback(struct notifier_block *self,$/;"	f	file:
+drwr_support	focaltech_flash.h	/^    bool drwr_support;$/;"	m	struct:upgrade_setting_nf
+dummy_byte	focaltech_core.h	/^    int dummy_byte;$/;"	m	struct:fts_ts_data
+early_suspend	focaltech_core.h	/^    struct early_suspend early_suspend;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::early_suspend
+ecclen_max	focaltech_flash.h	/^    u32 ecclen_max;$/;"	m	struct:upgrade_setting_nf
+eccok_val	focaltech_flash.h	/^    u8 eccok_val;$/;"	m	struct:upgrade_setting_nf
+enter_factory_mode	focaltech_test/focaltech_test.c	/^int enter_factory_mode(void)$/;"	f
+enter_work_mode	focaltech_test/focaltech_test.c	/^int enter_work_mode(void)$/;"	f
+esdcheck_algorithm	focaltech_esdcheck.c	/^static int esdcheck_algorithm(struct fts_ts_data *ts_data)$/;"	f	file:
+esdcheck_func	focaltech_esdcheck.c	/^static void esdcheck_func(struct work_struct *work)$/;"	f	file:
+esdcheck_work	focaltech_core.h	/^    struct delayed_work esdcheck_work;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::delayed_work
+events	focaltech_core.h	/^    struct ts_event *events;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::ts_event
+factory_mode	focaltech_test/focaltech_test.h	/^enum factory_mode {$/;"	g
+false	focaltech_test/focaltech_test.h	40;"	d
+fb_notif	focaltech_core.h	/^    struct notifier_block fb_notif;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::notifier_block
+fb_notifier_callback	focaltech_core.c	/^static int fb_notifier_callback(struct notifier_block *self,$/;"	f	file:
+fd_check	focaltech_flash.h	/^    bool fd_check;$/;"	m	struct:upgrade_setting_nf
+flag	focaltech_core.h	/^    int flag;   \/* touch event flag: 0 -- down; 1-- up; 2 -- contact *\/$/;"	m	struct:ts_event
+flow_work_cnt_last	focaltech_esdcheck.c	/^    u8      flow_work_cnt_last;         \/* Save Flow Work Cnt(reg0x91) value *\/$/;"	m	struct:fts_esdcheck_st	file:
+flow_work_hold_cnt	focaltech_esdcheck.c	/^    u8      flow_work_hold_cnt;         \/* Flow Work Cnt(reg0x91) keep a same value for x times. >=5 times is ESD, need reset *\/$/;"	m	struct:fts_esdcheck_st	file:
+force_touch	focaltech_test/focaltech_test.h	/^    bool force_touch;$/;"	m	struct:test_funcs
+force_upgrade	focaltech_flash.h	/^    int (*force_upgrade)(u8 *, u32);$/;"	m	struct:upgrade_func
+ft8006sp_cb_test	focaltech_test/supported_ic/focaltech_test_ft8006s_aa.c	/^static int ft8006sp_cb_test(struct fts_test *tdata, bool *test_result)$/;"	f	file:
+ft8006sp_lcdnoise_test	focaltech_test/supported_ic/focaltech_test_ft8006s_aa.c	/^static int ft8006sp_lcdnoise_test(struct fts_test *tdata, bool *test_result)$/;"	f	file:
+ft8006sp_open_test	focaltech_test/supported_ic/focaltech_test_ft8006s_aa.c	/^static int ft8006sp_open_test(struct fts_test *tdata, bool *test_result)$/;"	f	file:
+ft8006sp_rawdata_test	focaltech_test/supported_ic/focaltech_test_ft8006s_aa.c	/^static int ft8006sp_rawdata_test(struct fts_test *tdata, bool *test_result)$/;"	f	file:
+ft8006sp_short_test	focaltech_test/supported_ic/focaltech_test_ft8006s_aa.c	/^static int ft8006sp_short_test(struct fts_test *tdata, bool *test_result)$/;"	f	file:
+ft_chip_t	focaltech_common.h	/^struct ft_chip_t {$/;"	s
+fts_abs	focaltech_test/focaltech_test.c	/^int fts_abs(int value)$/;"	f
+fts_atoi	focaltech_test/focaltech_test_ini.c	/^static int fts_atoi(char *nptr)$/;"	f	file:
+fts_atol	focaltech_test/focaltech_test_ini.c	/^static long fts_atol(char *nptr)$/;"	f	file:
+fts_attribute_group	focaltech_ex_fun.c	/^static struct attribute_group fts_attribute_group = {$/;"	v	typeref:struct:attribute_group	file:
+fts_attributes	focaltech_ex_fun.c	/^static struct attribute *fts_attributes[] = {$/;"	v	typeref:struct:attribute	file:
+fts_bootmode_show	focaltech_ex_fun.c	/^static ssize_t fts_bootmode_show($/;"	f	file:
+fts_bootmode_store	focaltech_ex_fun.c	/^static ssize_t fts_bootmode_store($/;"	f	file:
+fts_bus_exit	focaltech_spi.c	/^int fts_bus_exit(struct fts_ts_data *ts_data)$/;"	f
+fts_bus_init	focaltech_spi.c	/^int fts_bus_init(struct fts_ts_data *ts_data)$/;"	f
+fts_charger_mode_show	focaltech_ex_mode.c	/^static ssize_t fts_charger_mode_show($/;"	f	file:
+fts_charger_mode_store	focaltech_ex_mode.c	/^static ssize_t fts_charger_mode_store($/;"	f	file:
+fts_check_bootid	focaltech_flash.c	/^static int fts_check_bootid(void)$/;"	f	file:
+fts_check_fast_download	focaltech_flash.c	/^static bool fts_check_fast_download(void)$/;"	f	file:
+fts_cover_mode_show	focaltech_ex_mode.c	/^static ssize_t fts_cover_mode_show($/;"	f	file:
+fts_cover_mode_store	focaltech_ex_mode.c	/^static ssize_t fts_cover_mode_store($/;"	f	file:
+fts_create_apk_debug_channel	focaltech_ex_fun.c	/^int fts_create_apk_debug_channel(struct fts_ts_data *ts_data)$/;"	f
+fts_create_esd_sysfs	focaltech_esdcheck.c	/^int fts_create_esd_sysfs(struct device *dev)$/;"	f
+fts_create_gesture_sysfs	focaltech_gesture.c	/^static int fts_create_gesture_sysfs(struct device *dev)$/;"	f	file:
+fts_create_sysfs	focaltech_ex_fun.c	/^int fts_create_sysfs(struct fts_ts_data *ts_data)$/;"	f
+fts_data	focaltech_core.c	/^struct fts_ts_data *fts_data;$/;"	v	typeref:struct:fts_ts_data
+fts_debug_read	focaltech_ex_fun.c	/^static int fts_debug_read($/;"	f	file:
+fts_debug_read	focaltech_ex_fun.c	/^static ssize_t fts_debug_read($/;"	f	file:
+fts_debug_write	focaltech_ex_fun.c	/^static int fts_debug_write($/;"	f	file:
+fts_debug_write	focaltech_ex_fun.c	/^static ssize_t fts_debug_write($/;"	f	file:
+fts_dev_pm_ops	focaltech_core.c	/^static const struct dev_pm_ops fts_dev_pm_ops = {$/;"	v	typeref:struct:dev_pm_ops	file:
+fts_dpram_write	focaltech_flash.c	/^static int fts_dpram_write(u32 saddr, const u8 *buf, u32 len, bool wpram)$/;"	f	file:
+fts_dpram_write_pe	focaltech_flash.c	/^static int fts_dpram_write_pe(u32 saddr, const u8 *buf, u32 len, bool wpram)$/;"	f	file:
+fts_dram_write_ecc	focaltech_flash.c	/^static int fts_dram_write_ecc(const u8 *buf, u32 len)$/;"	f	file:
+fts_driverinfo_show	focaltech_ex_fun.c	/^static ssize_t fts_driverinfo_show($/;"	f	file:
+fts_driverinfo_store	focaltech_ex_fun.c	/^static ssize_t fts_driverinfo_store($/;"	f	file:
+fts_dt_match	focaltech_core.c	/^static const struct of_device_id fts_dt_match[] = {$/;"	v	typeref:struct:of_device_id	file:
+fts_dumpreg_show	focaltech_ex_fun.c	/^static ssize_t fts_dumpreg_show($/;"	f	file:
+fts_dumpreg_store	focaltech_ex_fun.c	/^static ssize_t fts_dumpreg_store($/;"	f	file:
+fts_ecc_cal_host	focaltech_flash.c	/^static int fts_ecc_cal_host(const u8 *data, u32 data_len, u16 *ecc_value)$/;"	f	file:
+fts_ecc_cal_tp	focaltech_flash.c	/^static int fts_ecc_cal_tp(u32 ecc_saddr, u32 ecc_len, u16 *ecc_value)$/;"	f	file:
+fts_ecc_check	focaltech_flash.c	/^static int fts_ecc_check(const u8 *buf, u32 len, u32 ecc_saddr)$/;"	f	file:
+fts_enter_into_boot	focaltech_flash.c	/^static int fts_enter_into_boot(void)$/;"	f	file:
+fts_enter_test_environment	focaltech_flash.c	/^int fts_enter_test_environment(bool test_state)$/;"	f
+fts_esd_group	focaltech_esdcheck.c	/^static struct attribute_group fts_esd_group = {$/;"	v	typeref:struct:attribute_group	file:
+fts_esd_mode_attrs	focaltech_esdcheck.c	/^static struct attribute *fts_esd_mode_attrs[] = {$/;"	v	typeref:struct:attribute	file:
+fts_esdcheck_data	focaltech_esdcheck.c	/^static struct fts_esdcheck_st fts_esdcheck_data;$/;"	v	typeref:struct:fts_esdcheck_st	file:
+fts_esdcheck_exit	focaltech_esdcheck.c	/^int fts_esdcheck_exit(struct fts_ts_data *ts_data)$/;"	f
+fts_esdcheck_get_status	focaltech_esdcheck.c	/^static int fts_esdcheck_get_status(void)$/;"	f	file:
+fts_esdcheck_init	focaltech_esdcheck.c	/^int fts_esdcheck_init(struct fts_ts_data *ts_data)$/;"	f
+fts_esdcheck_proc_busy	focaltech_esdcheck.c	/^int fts_esdcheck_proc_busy(bool proc_debug)$/;"	f
+fts_esdcheck_resume	focaltech_esdcheck.c	/^int fts_esdcheck_resume( void )$/;"	f
+fts_esdcheck_set_intr	focaltech_esdcheck.c	/^int fts_esdcheck_set_intr(bool intr)$/;"	f
+fts_esdcheck_show	focaltech_esdcheck.c	/^static ssize_t fts_esdcheck_show($/;"	f	file:
+fts_esdcheck_st	focaltech_esdcheck.c	/^struct fts_esdcheck_st {$/;"	s	file:
+fts_esdcheck_store	focaltech_esdcheck.c	/^static ssize_t fts_esdcheck_store($/;"	f	file:
+fts_esdcheck_suspend	focaltech_esdcheck.c	/^int fts_esdcheck_suspend(void)$/;"	f
+fts_esdcheck_switch	focaltech_esdcheck.c	/^int fts_esdcheck_switch(bool enable)$/;"	f
+fts_esdcheck_tp_reset	focaltech_esdcheck.c	/^static int fts_esdcheck_tp_reset(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_ex_mode_exit	focaltech_ex_mode.c	/^int fts_ex_mode_exit(struct fts_ts_data *ts_data)$/;"	f
+fts_ex_mode_init	focaltech_ex_mode.c	/^int fts_ex_mode_init(struct fts_ts_data *ts_data)$/;"	f
+fts_ex_mode_recovery	focaltech_ex_mode.c	/^int fts_ex_mode_recovery(struct fts_ts_data *ts_data)$/;"	f
+fts_ex_mode_switch	focaltech_ex_mode.c	/^static int fts_ex_mode_switch(enum _ex_mode mode, u8 value)$/;"	f	file:
+fts_free	focaltech_test/focaltech_test.h	593;"	d
+fts_free_proc	focaltech_test/focaltech_test.c	/^void fts_free_proc(void *p)$/;"	f
+fts_ftest	focaltech_test/focaltech_test.c	/^struct fts_test *fts_ftest;$/;"	v	typeref:struct:fts_test
+fts_fw_download	focaltech_flash.c	/^static int fts_fw_download(const u8 *buf, u32 len, bool need_reset)$/;"	f	file:
+fts_fw_recovery	focaltech_flash.c	/^int fts_fw_recovery(void)$/;"	f
+fts_fw_resume	focaltech_flash.c	/^int fts_fw_resume(bool need_reset)$/;"	f
+fts_fw_write_start	focaltech_flash.c	/^static int fts_fw_write_start(const u8 *buf, u32 len, bool need_reset)$/;"	f	file:
+fts_fwforceupg_show	focaltech_ex_fun.c	/^static ssize_t fts_fwforceupg_show($/;"	f	file:
+fts_fwforceupg_store	focaltech_ex_fun.c	/^static ssize_t fts_fwforceupg_store($/;"	f	file:
+fts_fwupg_exit	focaltech_flash.c	/^int fts_fwupg_exit(struct fts_ts_data *ts_data)$/;"	f
+fts_fwupg_get_fw_file	focaltech_flash.c	/^static int fts_fwupg_get_fw_file(struct fts_upgrade *upg)$/;"	f	file:
+fts_fwupg_get_module_info	focaltech_flash.c	/^static int fts_fwupg_get_module_info(struct fts_upgrade *upg)$/;"	f	file:
+fts_fwupg_hardware_reset_to_boot	focaltech_flash.c	/^static int fts_fwupg_hardware_reset_to_boot(void)$/;"	f	file:
+fts_fwupg_init	focaltech_flash.c	/^int fts_fwupg_init(struct fts_ts_data *ts_data)$/;"	f
+fts_fwupg_work	focaltech_flash.c	/^static void fts_fwupg_work(struct work_struct *work)$/;"	f	file:
+fts_fwupgradebin_show	focaltech_ex_fun.c	/^static ssize_t fts_fwupgradebin_show($/;"	f	file:
+fts_fwupgradebin_store	focaltech_ex_fun.c	/^static ssize_t fts_fwupgradebin_store($/;"	f	file:
+fts_gesture_buf_show	focaltech_gesture.c	/^static ssize_t fts_gesture_buf_show($/;"	f	file:
+fts_gesture_buf_store	focaltech_gesture.c	/^static ssize_t fts_gesture_buf_store($/;"	f	file:
+fts_gesture_data	focaltech_gesture.c	/^static struct fts_gesture_st fts_gesture_data;$/;"	v	typeref:struct:fts_gesture_st	file:
+fts_gesture_exit	focaltech_gesture.c	/^int fts_gesture_exit(struct fts_ts_data *ts_data)$/;"	f
+fts_gesture_group	focaltech_gesture.c	/^static struct attribute_group fts_gesture_group = {$/;"	v	typeref:struct:attribute_group	file:
+fts_gesture_init	focaltech_gesture.c	/^int fts_gesture_init(struct fts_ts_data *ts_data)$/;"	f
+fts_gesture_mode_attrs	focaltech_gesture.c	/^static struct attribute *fts_gesture_mode_attrs[] = {$/;"	v	typeref:struct:attribute	file:
+fts_gesture_readdata	focaltech_gesture.c	/^int fts_gesture_readdata(struct fts_ts_data *ts_data, u8 *data)$/;"	f
+fts_gesture_recovery	focaltech_gesture.c	/^void fts_gesture_recovery(struct fts_ts_data *ts_data)$/;"	f
+fts_gesture_report	focaltech_gesture.c	/^static void fts_gesture_report(struct input_dev *input_dev, int gesture_id)$/;"	f	file:
+fts_gesture_resume	focaltech_gesture.c	/^int fts_gesture_resume(struct fts_ts_data *ts_data)$/;"	f
+fts_gesture_show	focaltech_gesture.c	/^static ssize_t fts_gesture_show($/;"	f	file:
+fts_gesture_st	focaltech_gesture.c	/^struct fts_gesture_st {$/;"	s	file:
+fts_gesture_store	focaltech_gesture.c	/^static ssize_t fts_gesture_store($/;"	f	file:
+fts_gesture_suspend	focaltech_gesture.c	/^int fts_gesture_suspend(struct fts_ts_data *ts_data)$/;"	f
+fts_get_chip_types	focaltech_core.c	/^static int fts_get_chip_types($/;"	f	file:
+fts_get_dt_coords	focaltech_core.c	/^static int fts_get_dt_coords(struct device *dev, char *name,$/;"	f	file:
+fts_get_fw_file_via_i	focaltech_flash.c	/^static int fts_get_fw_file_via_i(struct fts_upgrade *upg)$/;"	f	file:
+fts_get_fw_file_via_request_firmware	focaltech_flash.c	/^static int fts_get_fw_file_via_request_firmware(struct fts_upgrade *upg)$/;"	f	file:
+fts_get_ic_information	focaltech_core.c	/^static int fts_get_ic_information(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_glove_mode_show	focaltech_ex_mode.c	/^static ssize_t fts_glove_mode_show($/;"	f	file:
+fts_glove_mode_store	focaltech_ex_mode.c	/^static ssize_t fts_glove_mode_store($/;"	f	file:
+fts_gpio_configure	focaltech_core.c	/^static int fts_gpio_configure(struct fts_ts_data *data)$/;"	f	file:
+fts_hid2std	focaltech_core.c	/^void fts_hid2std(void)$/;"	f
+fts_hw_reset_show	focaltech_ex_fun.c	/^static ssize_t fts_hw_reset_show($/;"	f	file:
+fts_hw_reset_store	focaltech_ex_fun.c	/^static ssize_t fts_hw_reset_store($/;"	f	file:
+fts_init_buffer	focaltech_test/focaltech_test_ini.c	/^static void fts_init_buffer(int *buffer, int value, int len, bool key_check, int key_value, int key_len)$/;"	f	file:
+fts_input_init	focaltech_core.c	/^static int fts_input_init(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_input_report_a	focaltech_core.c	/^static int fts_input_report_a(struct fts_ts_data *data)$/;"	f	file:
+fts_input_report_b	focaltech_core.c	/^static int fts_input_report_b(struct fts_ts_data *data)$/;"	f	file:
+fts_input_report_key	focaltech_core.c	/^static int fts_input_report_key(struct fts_ts_data *data, int index)$/;"	f	file:
+fts_irq_disable	focaltech_core.c	/^void fts_irq_disable(void)$/;"	f
+fts_irq_enable	focaltech_core.c	/^void fts_irq_enable(void)$/;"	f
+fts_irq_handler	focaltech_core.c	/^static irqreturn_t fts_irq_handler(int irq, void *data)$/;"	f	file:
+fts_irq_read_report	focaltech_core.c	/^static void fts_irq_read_report(void)$/;"	f	file:
+fts_irq_registration	focaltech_core.c	/^static int fts_irq_registration(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_irq_show	focaltech_ex_fun.c	/^static ssize_t fts_irq_show($/;"	f	file:
+fts_irq_store	focaltech_ex_fun.c	/^static ssize_t fts_irq_store($/;"	f	file:
+fts_log_level_show	focaltech_ex_fun.c	/^static ssize_t fts_log_level_show($/;"	f	file:
+fts_log_level_store	focaltech_ex_fun.c	/^static ssize_t fts_log_level_store($/;"	f	file:
+fts_malloc	focaltech_test/focaltech_test.c	/^void *fts_malloc(size_t size)$/;"	f
+fts_malloc_r	focaltech_test/focaltech_test.h	584;"	d
+fts_parse_buf	focaltech_ex_fun.c	/^static int fts_parse_buf(const char *buf, size_t cmd_len)$/;"	f	file:
+fts_parse_dt	focaltech_core.c	/^static int fts_parse_dt(struct device *dev, struct fts_ts_platform_data *pdata)$/;"	f	file:
+fts_pinctrl_init	focaltech_core.c	/^static int fts_pinctrl_init(struct fts_ts_data *ts)$/;"	f	file:
+fts_pinctrl_select_normal	focaltech_core.c	/^static int fts_pinctrl_select_normal(struct fts_ts_data *ts)$/;"	f	file:
+fts_pinctrl_select_release	focaltech_core.c	/^static int fts_pinctrl_select_release(struct fts_ts_data *ts)$/;"	f	file:
+fts_pinctrl_select_suspend	focaltech_core.c	/^static int fts_pinctrl_select_suspend(struct fts_ts_data *ts)$/;"	f	file:
+fts_pm_resume	focaltech_core.c	/^static int fts_pm_resume(struct device *dev)$/;"	f	file:
+fts_pm_suspend	focaltech_core.c	/^static int fts_pm_suspend(struct device *dev)$/;"	f	file:
+fts_point_report_check_exit	focaltech_point_report_check.c	/^int fts_point_report_check_exit(struct fts_ts_data *ts_data)$/;"	f
+fts_point_report_check_init	focaltech_point_report_check.c	/^int fts_point_report_check_init(struct fts_ts_data *ts_data)$/;"	f
+fts_power_source_ctrl	focaltech_core.c	/^static int fts_power_source_ctrl(struct fts_ts_data *ts_data, int enable)$/;"	f	file:
+fts_power_source_exit	focaltech_core.c	/^static int fts_power_source_exit(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_power_source_init	focaltech_core.c	/^static int fts_power_source_init(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_power_source_resume	focaltech_core.c	/^static int fts_power_source_resume(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_power_source_suspend	focaltech_core.c	/^static int fts_power_source_suspend(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_pram_start	focaltech_flash.c	/^static int fts_pram_start(void)$/;"	f	file:
+fts_pram_write_ecc	focaltech_flash.c	/^static int fts_pram_write_ecc(const u8 *buf, u32 len)$/;"	f	file:
+fts_prc_func	focaltech_point_report_check.c	/^static void fts_prc_func(struct work_struct *work)$/;"	f	file:
+fts_prc_queue_work	focaltech_point_report_check.c	/^void fts_prc_queue_work(struct fts_ts_data *ts_data)$/;"	f
+fts_proc_fops	focaltech_ex_fun.c	/^static const struct file_operations fts_proc_fops = {$/;"	v	typeref:struct:file_operations	file:
+fts_read	focaltech_spi.c	/^int fts_read(u8 *cmd, u32 cmdlen, u8 *data, u32 datalen)$/;"	f
+fts_read_bootid	focaltech_core.c	/^static int fts_read_bootid(struct fts_ts_data *ts_data, u8 *id)$/;"	f	file:
+fts_read_file	focaltech_flash.c	/^static int fts_read_file(char *file_name, u8 **file_buf)$/;"	f	file:
+fts_read_parse_touchdata	focaltech_core.c	/^static int fts_read_parse_touchdata(struct fts_ts_data *data)$/;"	f	file:
+fts_read_reg	focaltech_spi.c	/^int fts_read_reg(u8 addr, u8 *value)$/;"	f
+fts_read_touchdata	focaltech_core.c	/^static int fts_read_touchdata(struct fts_ts_data *data)$/;"	f	file:
+fts_release_all_finger	focaltech_core.c	/^void fts_release_all_finger(void)$/;"	f
+fts_release_apk_debug_channel	focaltech_ex_fun.c	/^void fts_release_apk_debug_channel(struct fts_ts_data *ts_data)$/;"	f
+fts_remove_sysfs	focaltech_ex_fun.c	/^int fts_remove_sysfs(struct fts_ts_data *ts_data)$/;"	f
+fts_report_buffer_init	focaltech_core.c	/^static int fts_report_buffer_init(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_reset_proc	focaltech_core.c	/^int fts_reset_proc(int hdelayms)$/;"	f
+fts_resume_work	focaltech_core.c	/^static void fts_resume_work(struct work_struct *work)$/;"	f	file:
+fts_show_touch_buffer	focaltech_core.c	/^static void fts_show_touch_buffer(u8 *data, int datalen)$/;"	f	file:
+fts_spi_transfer	focaltech_spi.c	/^static int fts_spi_transfer(u8 *tx_buf, u8 *rx_buf, u32 len)$/;"	f	file:
+fts_strncmp	focaltech_test/focaltech_test_ini.c	/^static int fts_strncmp(const char *cs, const char *ct, int count)$/;"	f	file:
+fts_test	focaltech_test/focaltech_test.h	/^struct fts_test {$/;"	s
+fts_test_attribute_group	focaltech_test/focaltech_test.c	/^static struct attribute_group fts_test_attribute_group = {$/;"	v	typeref:struct:attribute_group	file:
+fts_test_attributes	focaltech_test/focaltech_test.c	/^static struct attribute *fts_test_attributes[] = {$/;"	v	typeref:struct:attribute	file:
+fts_test_bus_read	focaltech_test/focaltech_test.c	/^static int fts_test_bus_read($/;"	f	file:
+fts_test_bus_write	focaltech_test/focaltech_test.c	/^static int fts_test_bus_write(u8 *writebuf, int writelen)$/;"	f	file:
+fts_test_data	focaltech_test/focaltech_test.h	/^struct fts_test_data {$/;"	s
+fts_test_entry	focaltech_test/focaltech_test.c	/^static int fts_test_entry(char *ini_file_name)$/;"	f	file:
+fts_test_exit	focaltech_test/focaltech_test.c	/^int fts_test_exit(struct fts_ts_data *ts_data)$/;"	f
+fts_test_free_data	focaltech_test/focaltech_test.c	/^static void fts_test_free_data(struct fts_test *tdata)$/;"	f	file:
+fts_test_func_init	focaltech_test/focaltech_test.c	/^static int fts_test_func_init(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_test_get_ini_default	focaltech_test/focaltech_test_ini.c	/^static int fts_test_get_ini_default(struct ini_data *ini, char *fwname)$/;"	f	file:
+fts_test_get_ini_size	focaltech_test/focaltech_test_ini.c	/^static int fts_test_get_ini_size(char *config_name)$/;"	f	file:
+fts_test_get_ini_via_request_firmware	focaltech_test/focaltech_test_ini.c	/^static int fts_test_get_ini_via_request_firmware(struct ini_data *ini, char *fwname)$/;"	f	file:
+fts_test_get_item_count_scap_csv	focaltech_test/focaltech_test.c	/^static int fts_test_get_item_count_scap_csv(int index)$/;"	f	file:
+fts_test_get_testparam_from_ini	focaltech_test/focaltech_test_ini.c	/^int fts_test_get_testparam_from_ini(char *config_name)$/;"	f
+fts_test_get_testparams	focaltech_test/focaltech_test.c	/^static int fts_test_get_testparams(char *config_name)$/;"	f	file:
+fts_test_init	focaltech_test/focaltech_test.c	/^int fts_test_init(struct fts_ts_data *ts_data)$/;"	f
+fts_test_init_basicinfo	focaltech_test/focaltech_test.c	/^static int fts_test_init_basicinfo(struct fts_test *tdata)$/;"	f	file:
+fts_test_init_item	focaltech_test/focaltech_test.c	/^static void fts_test_init_item(struct fts_test *tdata)$/;"	f	file:
+fts_test_main_exit	focaltech_test/focaltech_test.c	/^static int fts_test_main_exit(void)$/;"	f	file:
+fts_test_main_init	focaltech_test/focaltech_test.c	/^static int fts_test_main_init(void)$/;"	f	file:
+fts_test_malloc_free_data_txt	focaltech_test/focaltech_test.c	/^static int fts_test_malloc_free_data_txt(struct fts_test *tdata, bool allocate)$/;"	f	file:
+fts_test_malloc_free_incell	focaltech_test/focaltech_test.c	/^static int fts_test_malloc_free_incell(struct fts_test *tdata, bool allocate)$/;"	f	file:
+fts_test_malloc_free_mc_sc	focaltech_test/focaltech_test.c	/^static int fts_test_malloc_free_mc_sc(struct fts_test *tdata, bool allocate)$/;"	f	file:
+fts_test_malloc_free_sc	focaltech_test/focaltech_test.c	/^static int fts_test_malloc_free_sc(struct fts_test *tdata, bool allocate)$/;"	f	file:
+fts_test_malloc_free_thr	focaltech_test/focaltech_test.c	/^static int fts_test_malloc_free_thr(struct fts_test *tdata, bool allocate)$/;"	f	file:
+fts_test_node	focaltech_test/focaltech_test.h	/^struct fts_test_node {$/;"	s
+fts_test_read	focaltech_test/focaltech_test.c	/^int fts_test_read(u8 addr, u8 *readbuf, int readlen)$/;"	f
+fts_test_read_ini_data	focaltech_test/focaltech_test_ini.c	/^static int fts_test_read_ini_data(char *config_name, char *config_buf)$/;"	f	file:
+fts_test_read_reg	focaltech_test/focaltech_test.c	/^int fts_test_read_reg(u8 addr, u8 *val)$/;"	f
+fts_test_save_data	focaltech_test/focaltech_test.c	/^void fts_test_save_data(char *name, int code, int *data, int datacnt,$/;"	f
+fts_test_save_data_csv	focaltech_test/focaltech_test.c	/^static void fts_test_save_data_csv(struct fts_test *tdata)$/;"	f	file:
+fts_test_save_fail_result	focaltech_test/focaltech_test.c	/^void fts_test_save_fail_result($/;"	f
+fts_test_save_result_txt	focaltech_test/focaltech_test.c	/^static void fts_test_save_result_txt(struct fts_test *tdata)$/;"	f	file:
+fts_test_save_test_data	focaltech_test/focaltech_test.c	/^static int fts_test_save_test_data(char *file_name, char *data_buf, int len)$/;"	f	file:
+fts_test_show	focaltech_test/focaltech_test.c	/^static ssize_t fts_test_show($/;"	f	file:
+fts_test_start	focaltech_test/focaltech_test.c	/^static int fts_test_start(void)$/;"	f	file:
+fts_test_store	focaltech_test/focaltech_test.c	/^static ssize_t fts_test_store($/;"	f	file:
+fts_test_write	focaltech_test/focaltech_test.c	/^int fts_test_write(u8 addr, u8 *writebuf, int writelen)$/;"	f
+fts_test_write_reg	focaltech_test/focaltech_test.c	/^int fts_test_write_reg(u8 addr, u8 val)$/;"	f
+fts_touch_mode_attrs	focaltech_ex_mode.c	/^static struct attribute *fts_touch_mode_attrs[] = {$/;"	v	typeref:struct:attribute	file:
+fts_touch_mode_group	focaltech_ex_mode.c	/^static struct attribute_group fts_touch_mode_group = {$/;"	v	typeref:struct:attribute_group	file:
+fts_tp_state_recovery	focaltech_core.c	/^void fts_tp_state_recovery(struct fts_ts_data *ts_data)$/;"	f
+fts_tpbuf_show	focaltech_ex_fun.c	/^static ssize_t fts_tpbuf_show($/;"	f	file:
+fts_tpbuf_store	focaltech_ex_fun.c	/^static ssize_t fts_tpbuf_store($/;"	f	file:
+fts_tpfwver_show	focaltech_ex_fun.c	/^static ssize_t fts_tpfwver_show($/;"	f	file:
+fts_tpfwver_store	focaltech_ex_fun.c	/^static ssize_t fts_tpfwver_store($/;"	f	file:
+fts_tprwreg_show	focaltech_ex_fun.c	/^static ssize_t fts_tprwreg_show($/;"	f	file:
+fts_tprwreg_store	focaltech_ex_fun.c	/^static ssize_t fts_tprwreg_store($/;"	f	file:
+fts_ts_data	focaltech_core.h	/^struct fts_ts_data {$/;"	s
+fts_ts_driver	focaltech_core.c	/^static struct spi_driver fts_ts_driver = {$/;"	v	typeref:struct:spi_driver	file:
+fts_ts_early_suspend	focaltech_core.c	/^static void fts_ts_early_suspend(struct early_suspend *handler)$/;"	f	file:
+fts_ts_exit	focaltech_core.c	/^module_exit(fts_ts_exit);$/;"	v
+fts_ts_exit	focaltech_core.c	/^static void __exit fts_ts_exit(void)$/;"	f	file:
+fts_ts_id	focaltech_core.c	/^static const struct spi_device_id fts_ts_id[] = {$/;"	v	typeref:struct:spi_device_id	file:
+fts_ts_init	focaltech_core.c	/^module_init(fts_ts_init);$/;"	v
+fts_ts_init	focaltech_core.c	/^static int __init fts_ts_init(void)$/;"	f	file:
+fts_ts_late_resume	focaltech_core.c	/^static void fts_ts_late_resume(struct early_suspend *handler)$/;"	f	file:
+fts_ts_platform_data	focaltech_core.h	/^struct fts_ts_platform_data {$/;"	s
+fts_ts_probe	focaltech_core.c	/^static int fts_ts_probe(struct spi_device *spi)$/;"	f	file:
+fts_ts_probe_entry	focaltech_core.c	/^static int fts_ts_probe_entry(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_ts_remove	focaltech_core.c	/^static int fts_ts_remove(struct spi_device *spi)$/;"	f	file:
+fts_ts_remove_entry	focaltech_core.c	/^static int fts_ts_remove_entry(struct fts_ts_data *ts_data)$/;"	f	file:
+fts_ts_resume	focaltech_core.c	/^static int fts_ts_resume(struct device *dev)$/;"	f	file:
+fts_ts_suspend	focaltech_core.c	/^static int fts_ts_suspend(struct device *dev)$/;"	f	file:
+fts_upgrade	focaltech_flash.h	/^struct fts_upgrade {$/;"	s
+fts_upgrade_bin	focaltech_flash.c	/^int fts_upgrade_bin(char *fw_name, bool force)$/;"	f
+fts_wait_tp_to_valid	focaltech_core.c	/^int fts_wait_tp_to_valid(void)$/;"	f
+fts_write	focaltech_spi.c	/^int fts_write(u8 *writebuf, u32 writelen)$/;"	f
+fts_write_reg	focaltech_spi.c	/^int fts_write_reg(u8 addr, u8 value)$/;"	f
+ftxxxx_proc	focaltech_core.h	/^struct ftxxxx_proc {$/;"	s
+func	focaltech_flash.h	/^    struct upgrade_func *func;$/;"	m	struct:fts_upgrade	typeref:struct:fts_upgrade::upgrade_func
+func	focaltech_test/focaltech_test.h	/^    struct test_funcs *func;$/;"	m	struct:fts_test	typeref:struct:fts_test::test_funcs
+fw	focaltech_flash.h	/^    u8 *fw;$/;"	m	struct:fts_upgrade
+fw_ecc_check_mode	focaltech_flash.h	/^    int fw_ecc_check_mode;$/;"	m	struct:upgrade_func
+fw_file	focaltech_flash.c	/^u8 fw_file[] = {$/;"	v
+fw_file	focaltech_flash.h	/^    u8 *fw_file;$/;"	m	struct:upgrade_module
+fw_file2	focaltech_flash.c	/^u8 fw_file2[] = {$/;"	v
+fw_file3	focaltech_flash.c	/^u8 fw_file3[] = {$/;"	v
+fw_from_request	focaltech_flash.h	/^    bool fw_from_request;$/;"	m	struct:fts_upgrade
+fw_is_running	focaltech_core.h	/^    int fw_is_running;      \/* confirm fw is running when using spi:default 0 *\/$/;"	m	struct:fts_ts_data
+fw_len	focaltech_flash.h	/^    u32 fw_len;$/;"	m	struct:upgrade_module
+fw_length	focaltech_flash.h	/^    u32 fw_length;$/;"	m	struct:fts_upgrade
+fw_loading	focaltech_core.h	/^    bool fw_loading;$/;"	m	struct:fts_ts_data
+fw_ver	focaltech_test/focaltech_test.h	/^    u8 fw_ver;$/;"	m	struct:fts_test
+fwcfgoff	focaltech_flash.h	/^    u32 fwcfgoff;$/;"	m	struct:upgrade_func
+fwupg_work	focaltech_core.h	/^    struct work_struct fwupg_work;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::work_struct
+fwupgrade	focaltech_flash.c	/^struct fts_upgrade *fwupgrade;$/;"	v	typeref:struct:fts_upgrade
+fwveroff	focaltech_flash.h	/^    u32 fwveroff;$/;"	m	struct:upgrade_func
+gesture_id	focaltech_gesture.c	/^    u8 gesture_id;$/;"	m	struct:fts_gesture_st	file:
+gesture_mode	focaltech_core.h	/^    bool gesture_mode;      \/* gesture enable or disable, default: disable *\/$/;"	m	struct:fts_ts_data
+get_basic_threshold	focaltech_test/focaltech_test_ini.c	/^static int get_basic_threshold(char name[][MAX_KEYWORD_NAME_LEN], int length, int *val)$/;"	f	file:
+get_cb_incell	focaltech_test/focaltech_test.c	/^int get_cb_incell(u16 saddr, int byte_num, int *cb_buf)$/;"	f
+get_cb_mc_sc	focaltech_test/focaltech_test.c	/^int get_cb_mc_sc(u8 wp, int byte_num, int *cb_buf, enum byte_mode mode)$/;"	f
+get_cb_sc	focaltech_test/focaltech_test.c	/^int get_cb_sc(int byte_num, int *cb_buf, enum byte_mode mode)$/;"	f
+get_channel_num	focaltech_test/focaltech_test.c	/^static int get_channel_num(struct fts_test *tdata)$/;"	f	file:
+get_chip_id	focaltech_esdcheck.c	/^static bool get_chip_id(struct fts_ts_data *ts_data)$/;"	f	file:
+get_detail_threshold	focaltech_test/focaltech_test_ini.c	/^static void get_detail_threshold(char *key_name, bool is_prex, int *thr, int node_num)$/;"	f	file:
+get_flow_cnt	focaltech_esdcheck.c	/^static bool get_flow_cnt(struct fts_ts_data *ts_data)$/;"	f	file:
+get_fw_wp	focaltech_test/focaltech_test.c	/^bool get_fw_wp(u8 wp_ch_sel, enum wp_type water_proof_type)$/;"	f
+get_hlic_ver	focaltech_flash.h	/^    int (*get_hlic_ver)(u8 *);$/;"	m	struct:upgrade_func
+get_key_num	focaltech_test/focaltech_test.c	/^static int get_key_num(int *key_num_en, int max_key_num)$/;"	f	file:
+get_keyword_value	focaltech_test/focaltech_test_ini.c	/^int get_keyword_value(char *section, char *name, int *value)$/;"	f
+get_rawdata	focaltech_test/focaltech_test.c	/^int get_rawdata(int *data)$/;"	f
+get_rawdata_mc	focaltech_test/focaltech_test.c	/^int get_rawdata_mc(u8 fre, u8 fir, int *rawdata)$/;"	f
+get_rawdata_mc_sc	focaltech_test/focaltech_test.c	/^int get_rawdata_mc_sc(enum wp_type wp, int *data)$/;"	f
+get_test_item	focaltech_test/focaltech_test_ini.c	/^static int get_test_item(char name[][MAX_KEYWORD_NAME_LEN], int length, int *val)$/;"	f	file:
+get_test_item_incell	focaltech_test/focaltech_test_ini.c	/^static int get_test_item_incell(void)$/;"	f	file:
+get_test_item_mc_sc	focaltech_test/focaltech_test_ini.c	/^static int get_test_item_mc_sc(void)$/;"	f	file:
+get_test_item_sc	focaltech_test/focaltech_test_ini.c	/^static int get_test_item_sc(void)$/;"	f	file:
+get_test_threshold_incell	focaltech_test/focaltech_test_ini.c	/^static int get_test_threshold_incell(void)$/;"	f	file:
+get_test_threshold_mc_sc	focaltech_test/focaltech_test_ini.c	/^static int get_test_threshold_mc_sc(void)$/;"	f	file:
+get_test_threshold_sc	focaltech_test/focaltech_test_ini.c	/^static int get_test_threshold_sc(void)$/;"	f	file:
+get_tx_rx_num	focaltech_test/focaltech_test.c	/^static int get_tx_rx_num(u8 tx_rx_reg, u8 *ch_num, u8 ch_num_max)$/;"	f	file:
+get_value_basic	focaltech_test/focaltech_test_ini.h	139;"	d
+get_value_detail	focaltech_test/focaltech_test_ini.h	141;"	d
+get_value_interface	focaltech_test/focaltech_test_ini.h	137;"	d
+get_value_testitem	focaltech_test/focaltech_test_ini.h	143;"	d
+glove_mode	focaltech_core.h	/^    bool glove_mode;$/;"	m	struct:fts_ts_data
+half_length	focaltech_flash.h	/^    bool half_length;$/;"	m	struct:upgrade_setting_nf
+hardware_reset_cnt	focaltech_esdcheck.c	/^    u32     hardware_reset_cnt;$/;"	m	struct:fts_esdcheck_st	file:
+have_key	focaltech_core.h	/^    bool have_key;$/;"	m	struct:fts_ts_platform_data
+hid_supported	focaltech_common.h	/^    bool hid_supported;$/;"	m	struct:ts_ic_info
+hid_supported	focaltech_flash.h	/^    bool hid_supported;$/;"	m	struct:upgrade_func
+hwtype	focaltech_test/focaltech_test.h	/^    enum test_hw_type hwtype;$/;"	m	struct:test_funcs	typeref:enum:test_funcs::test_hw_type
+ic	focaltech_test/focaltech_test.h	/^    } ic;$/;"	m	struct:fts_test	typeref:union:fts_test::__anon5
+ic_code	focaltech_test/focaltech_test_ini.h	/^    u32 ic_code;$/;"	m	struct:ini_data
+ic_info	focaltech_core.h	/^    struct ts_ic_info ic_info;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::ts_ic_info
+ic_name	focaltech_test/focaltech_test_ini.h	/^    char ic_name[MAX_IC_NAME_LEN];$/;"	m	struct:ini_data
+ic_name	focaltech_test/focaltech_test_ini.h	/^    char ic_name[MAX_IC_NAME_LEN];$/;"	m	struct:ini_ic_type
+ic_type	focaltech_test/focaltech_test_ini.h	/^    u32 ic_type;$/;"	m	struct:ini_ic_type
+ic_types	focaltech_test/focaltech_test_ini.c	/^struct ini_ic_type ic_types[] = {$/;"	v	typeref:struct:ini_ic_type
+id	focaltech_core.h	/^    int id;     \/*touch ID *\/$/;"	m	struct:ts_event
+id	focaltech_flash.h	/^    int id;$/;"	m	struct:upgrade_module
+idc_esdcheck_lcderror	focaltech_esdcheck.c	/^int idc_esdcheck_lcderror(struct fts_ts_data *ts_data)$/;"	f
+ids	focaltech_common.h	/^    struct ft_chip_t ids;$/;"	m	struct:ts_ic_info	typeref:struct:ts_ic_info::ft_chip_t
+incell	focaltech_test/focaltech_test.h	/^        struct incell_test incell;$/;"	m	union:fts_test::__anon5	typeref:struct:fts_test::__anon5::incell_test
+incell_test	focaltech_test/focaltech_test.h	/^struct incell_test {$/;"	s
+incell_testitem	focaltech_test/focaltech_test.h	/^struct incell_testitem {$/;"	s
+incell_threshold	focaltech_test/focaltech_test.h	/^struct incell_threshold {$/;"	s
+incell_threshold_b	focaltech_test/focaltech_test.h	/^struct incell_threshold_b {$/;"	s
+info	focaltech_test/focaltech_test.h	/^    struct item_info info[TEST_ITEM_COUNT_MAX];$/;"	m	struct:fts_test_data	typeref:struct:fts_test_data::item_info
+ini	focaltech_test/focaltech_test.h	/^    struct ini_data ini;$/;"	m	struct:fts_test	typeref:struct:fts_test::ini_data
+ini_data	focaltech_test/focaltech_test_ini.h	/^struct ini_data {$/;"	s
+ini_get_ic_code	focaltech_test/focaltech_test_ini.c	/^static u32 ini_get_ic_code(char *ic_name)$/;"	f	file:
+ini_get_key	focaltech_test/focaltech_test_ini.c	/^static int ini_get_key(char *section_name, char *key_name, char *value)$/;"	f	file:
+ini_get_line	focaltech_test/focaltech_test_ini.c	/^static int ini_get_line(char *filedata, char *line_data, int *line_len)$/;"	f	file:
+ini_get_string_value	focaltech_test/focaltech_test_ini.c	/^static int ini_get_string_value(char *section_name, char *key_name, char *rval)$/;"	f	file:
+ini_ic_type	focaltech_test/focaltech_test_ini.h	/^struct ini_ic_type {$/;"	s
+ini_init_inidata	focaltech_test/focaltech_test_ini.c	/^static int ini_init_inidata(struct ini_data *ini)$/;"	f	file:
+ini_init_interface	focaltech_test/focaltech_test_ini.c	/^static void ini_init_interface(struct ini_data *ini)$/;"	f	file:
+ini_init_test	focaltech_test/focaltech_test_ini.c	/^static int ini_init_test(struct ini_data *ini)$/;"	f	file:
+ini_init_test_incell	focaltech_test/focaltech_test_ini.c	/^static int ini_init_test_incell(void)$/;"	f	file:
+ini_init_test_mc_sc	focaltech_test/focaltech_test_ini.c	/^static int ini_init_test_mc_sc(void)$/;"	f	file:
+ini_init_test_sc	focaltech_test/focaltech_test_ini.c	/^static int ini_init_test_sc(void)$/;"	f	file:
+ini_keyword	focaltech_test/focaltech_test_ini.h	/^struct ini_keyword {$/;"	s
+ini_parse_keyword	focaltech_test/focaltech_test_ini.c	/^static int ini_parse_keyword(struct ini_data *ini, char *line_buffer)$/;"	f	file:
+ini_parse_section	focaltech_test/focaltech_test_ini.c	/^static int ini_parse_section(struct ini_data *ini, char *line_buffer)$/;"	f	file:
+ini_section	focaltech_test/focaltech_test_ini.h	/^struct ini_section {$/;"	s
+init	focaltech_flash.h	/^    int (*init)(u8 *, u32);$/;"	m	struct:upgrade_func
+init	focaltech_test/focaltech_test.h	/^    int (*init)(void);$/;"	m	struct:test_funcs
+init_node_valid	focaltech_test/focaltech_test_ini.c	/^static int init_node_valid(void)$/;"	f	file:
+input_dev	focaltech_core.h	/^    struct input_dev *input_dev;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::input_dev
+intr	focaltech_esdcheck.c	/^    u8      intr                : 1;    \/* 1- Interrupt trigger *\/$/;"	m	struct:fts_esdcheck_st	file:
+intr_cnt	focaltech_esdcheck.c	/^    u8      intr_cnt;$/;"	m	struct:fts_esdcheck_st	file:
+irq	focaltech_core.h	/^    int irq;$/;"	m	struct:fts_ts_data
+irq_disabled	focaltech_core.h	/^    bool irq_disabled;$/;"	m	struct:fts_ts_data
+irq_gpio	focaltech_core.h	/^    u32 irq_gpio;$/;"	m	struct:fts_ts_platform_data
+irq_gpio_flags	focaltech_core.h	/^    u32 irq_gpio_flags;$/;"	m	struct:fts_ts_platform_data
+irq_lock	focaltech_core.h	/^    spinlock_t irq_lock;$/;"	m	struct:fts_ts_data
+is_incell	focaltech_common.h	/^    bool is_incell;$/;"	m	struct:ts_ic_info
+is_reset_register_BC	focaltech_flash.h	/^    bool is_reset_register_BC;$/;"	m	struct:upgrade_func
+isdigit	focaltech_test/focaltech_test_ini.c	/^static int isdigit(int x)$/;"	f	file:
+isspace	focaltech_test/focaltech_test_ini.c	/^static int isspace(int x)$/;"	f	file:
+item	focaltech_test/focaltech_test.h	/^        struct incell_testitem item;$/;"	m	union:incell_test::__anon2	typeref:struct:incell_test::__anon2::incell_testitem
+item	focaltech_test/focaltech_test.h	/^        struct mc_sc_testitem item;$/;"	m	union:mc_sc_test::__anon3	typeref:struct:mc_sc_test::__anon3::mc_sc_testitem
+item	focaltech_test/focaltech_test.h	/^        struct sc_testitem item;$/;"	m	union:sc_test::__anon4	typeref:struct:sc_test::__anon4::sc_testitem
+item_count	focaltech_test/focaltech_test.h	/^    int item_count;$/;"	m	struct:fts_test_data
+item_info	focaltech_test/focaltech_test.h	/^struct item_info {$/;"	s
+key_num	focaltech_test/focaltech_test.h	/^    int key_num;$/;"	m	struct:fts_test_node
+key_num_total	focaltech_test/focaltech_test.h	/^    int key_num_total;$/;"	m	struct:test_funcs
+key_number	focaltech_core.h	/^    u32 key_number;$/;"	m	struct:fts_ts_platform_data
+key_state	focaltech_core.h	/^    int key_state;$/;"	m	struct:fts_ts_data
+key_support	focaltech_test/focaltech_test.h	/^    bool key_support;$/;"	m	struct:fts_test
+key_support	focaltech_test/focaltech_test.h	/^    int key_support;$/;"	m	struct:item_info
+key_x_coords	focaltech_core.h	/^    u32 key_x_coords[FTS_MAX_KEYS];$/;"	m	struct:fts_ts_platform_data
+key_y_coords	focaltech_core.h	/^    u32 key_y_coords[FTS_MAX_KEYS];$/;"	m	struct:fts_ts_platform_data
+keys	focaltech_core.h	/^    u32 keys[FTS_MAX_KEYS];$/;"	m	struct:fts_ts_platform_data
+keyshort_cb_max	focaltech_test/focaltech_test.h	/^    int keyshort_cb_max;$/;"	m	struct:incell_threshold_b
+keyshort_k1	focaltech_test/focaltech_test.h	/^    int keyshort_k1;$/;"	m	struct:incell_threshold_b
+keyshort_test	focaltech_test/focaltech_test.h	/^    u32 keyshort_test               : 1;$/;"	m	struct:incell_testitem
+keyword	focaltech_test/focaltech_test_ini.h	/^    struct ini_keyword *keyword;$/;"	m	struct:ini_section	typeref:struct:ini_section::ini_keyword
+keyword_num	focaltech_test/focaltech_test_ini.h	/^    int keyword_num;$/;"	m	struct:ini_section
+keyword_num_total	focaltech_test/focaltech_test_ini.h	/^    int keyword_num_total;$/;"	m	struct:ini_data
+kfree_safe	focaltech_common.h	102;"	d
+lcd_need_reset	focaltech_esdcheck.c	/^int lcd_need_reset;$/;"	v
+lcdnoise_coefficient	focaltech_test/focaltech_test.h	/^    int lcdnoise_coefficient;$/;"	m	struct:incell_threshold_b
+lcdnoise_coefficient_vkey	focaltech_test/focaltech_test.h	/^    int lcdnoise_coefficient_vkey;$/;"	m	struct:incell_threshold_b
+lcdnoise_frame	focaltech_test/focaltech_test.h	/^    int lcdnoise_frame;$/;"	m	struct:incell_threshold_b
+lcdnoise_test	focaltech_test/focaltech_test.h	/^    u32 lcdnoise_test               : 1;$/;"	m	struct:incell_testitem
+len	focaltech_ex_fun.c	/^    int len;            \/*  read\/write length *\/$/;"	m	struct:rwreg_operation_t	file:
+length	focaltech_test/focaltech_test_ini.h	/^    int length;$/;"	m	struct:ini_data
+lic	focaltech_flash.h	/^    u8 *lic;$/;"	m	struct:fts_upgrade
+lic_length	focaltech_flash.h	/^    u32 lic_length;$/;"	m	struct:fts_upgrade
+lic_upgrade	focaltech_flash.h	/^    int (*lic_upgrade)(u8 *, u32);$/;"	m	struct:upgrade_func
+licoff	focaltech_flash.h	/^    u32 licoff;$/;"	m	struct:upgrade_func
+line_type	focaltech_test/focaltech_test_ini.h	/^enum line_type {$/;"	g
+log_level	focaltech_core.h	/^    int log_level;$/;"	m	struct:fts_ts_data
+mapping	focaltech_test/focaltech_test.h	/^    u8 mapping;$/;"	m	struct:fts_test
+mapping_switch	focaltech_test/focaltech_test.c	/^int mapping_switch(u8 mapping)$/;"	f
+mapping_type	focaltech_test/focaltech_test.h	/^enum mapping_type {$/;"	g
+max	focaltech_test/focaltech_test.h	/^    int max;$/;"	m	struct:dcb_sort_d
+max_touch_number	focaltech_core.h	/^    u32 max_touch_number;$/;"	m	struct:fts_ts_platform_data
+mc_sc	focaltech_test/focaltech_test.h	/^        struct mc_sc_test mc_sc;$/;"	m	union:fts_test::__anon5	typeref:struct:fts_test::__anon5::mc_sc_test
+mc_sc	focaltech_test/focaltech_test.h	/^    int mc_sc;$/;"	m	struct:item_info
+mc_sc_short_v2	focaltech_test/focaltech_test.h	/^    bool mc_sc_short_v2;$/;"	m	struct:test_funcs
+mc_sc_test	focaltech_test/focaltech_test.h	/^struct mc_sc_test {$/;"	s
+mc_sc_testitem	focaltech_test/focaltech_test.h	/^struct mc_sc_testitem {$/;"	s
+mc_sc_threshold	focaltech_test/focaltech_test.h	/^struct mc_sc_threshold {$/;"	s
+mc_sc_threshold_b	focaltech_test/focaltech_test.h	/^struct mc_sc_threshold_b {$/;"	s
+min	focaltech_test/focaltech_test.h	/^    int min;$/;"	m	struct:dcb_sort_d
+mode	focaltech_esdcheck.c	/^    u8      mode                : 1;    \/* 1- need check esd 0- no esd check *\/$/;"	m	struct:fts_esdcheck_st	file:
+module_id	focaltech_flash.h	/^    int module_id;$/;"	m	struct:fts_upgrade
+module_info	focaltech_flash.h	/^    struct upgrade_module *module_info;$/;"	m	struct:fts_upgrade	typeref:struct:fts_upgrade::upgrade_module
+module_list	focaltech_flash.c	/^struct upgrade_module module_list[] = {$/;"	v	typeref:struct:upgrade_module
+mux_open_cb_min	focaltech_test/focaltech_test.h	/^    int mux_open_cb_min;$/;"	m	struct:incell_threshold_b
+mux_open_test	focaltech_test/focaltech_test.h	/^    u32 mux_open_test               : 1;$/;"	m	struct:incell_testitem
+nack_cnt	focaltech_esdcheck.c	/^    u32     nack_cnt;$/;"	m	struct:fts_esdcheck_st	file:
+name	focaltech_test/focaltech_test.h	/^    char name[TEST_ITEM_NAME_MAX];$/;"	m	struct:item_info
+name	focaltech_test/focaltech_test_ini.h	/^    char name[MAX_KEYWORD_NAME_LEN];$/;"	m	struct:ini_keyword
+name	focaltech_test/focaltech_test_ini.h	/^    char name[MAX_KEYWORD_NAME_LEN];$/;"	m	struct:ini_section
+new_return_value_from_ic	focaltech_flash.h	/^    bool new_return_value_from_ic;$/;"	m	struct:upgrade_func
+node	focaltech_test/focaltech_test.h	/^    struct fts_test_node node;$/;"	m	struct:fts_test	typeref:struct:fts_test::fts_test_node
+node_num	focaltech_test/focaltech_test.h	/^    int node_num;$/;"	m	struct:fts_test_node
+node_valid	focaltech_test/focaltech_test.h	/^    int *node_valid;$/;"	m	struct:fts_test
+node_valid_sc	focaltech_test/focaltech_test.h	/^    int *node_valid_sc;$/;"	m	struct:fts_test
+normalize	focaltech_test/focaltech_test.h	/^    u8 normalize;$/;"	m	struct:fts_test
+normalize_type	focaltech_test/focaltech_test.h	/^enum normalize_type {$/;"	g
+offset	focaltech_test/focaltech_test.h	/^    int offset;$/;"	m	struct:fts_test
+opbuf	focaltech_ex_fun.c	/^    char *opbuf;        \/*  length >= 1, read return value, write: op return *\/$/;"	m	struct:rwreg_operation_t	file:
+open_cb_min	focaltech_test/focaltech_test.h	/^    int open_cb_min;$/;"	m	struct:incell_threshold_b
+open_k1_check	focaltech_test/focaltech_test.h	/^    int open_k1_check;$/;"	m	struct:incell_threshold_b
+open_k1_value	focaltech_test/focaltech_test.h	/^    int open_k1_value;$/;"	m	struct:incell_threshold_b
+open_k2_check	focaltech_test/focaltech_test.h	/^    int open_k2_check;$/;"	m	struct:incell_threshold_b
+open_k2_value	focaltech_test/focaltech_test.h	/^    int open_k2_value;$/;"	m	struct:incell_threshold_b
+open_nmos	focaltech_test/focaltech_test.h	/^    int open_nmos;$/;"	m	struct:incell_threshold_b
+open_test	focaltech_test/focaltech_test.h	/^    u32 open_test                   : 1;$/;"	m	struct:incell_testitem
+opmode	focaltech_core.h	/^    u8 opmode;$/;"	m	struct:ftxxxx_proc
+p	focaltech_core.h	/^    int p;      \/* pressure *\/$/;"	m	struct:ts_event
+panel_differ_max	focaltech_test/focaltech_test.h	/^    int *panel_differ_max;$/;"	m	struct:mc_sc_threshold
+panel_differ_max	focaltech_test/focaltech_test.h	/^    int panel_differ_max;$/;"	m	struct:mc_sc_threshold_b
+panel_differ_min	focaltech_test/focaltech_test.h	/^    int *panel_differ_min;$/;"	m	struct:mc_sc_threshold
+panel_differ_min	focaltech_test/focaltech_test.h	/^    int panel_differ_min;$/;"	m	struct:mc_sc_threshold_b
+panel_differ_test	focaltech_test/focaltech_test.h	/^    u32 panel_differ_test           : 1;$/;"	m	struct:mc_sc_testitem
+param_init	focaltech_test/focaltech_test.h	/^    int (*param_init)(void);$/;"	m	struct:test_funcs
+param_upgrade	focaltech_flash.h	/^    int (*param_upgrade)(u8 *, u32);$/;"	m	struct:upgrade_func
+paramcfg2off	focaltech_flash.h	/^    u32 paramcfg2off;$/;"	m	struct:upgrade_func
+paramcfgoff	focaltech_flash.h	/^    u32 paramcfgoff;$/;"	m	struct:upgrade_func
+paramcfgveroff	focaltech_flash.h	/^    u32 paramcfgveroff;$/;"	m	struct:upgrade_func
+pb_idh	focaltech_common.h	/^    u8 pb_idh;$/;"	m	struct:ft_chip_t
+pb_idl	focaltech_common.h	/^    u8 pb_idl;$/;"	m	struct:ft_chip_t
+pb_length	focaltech_flash.h	/^    u32 pb_length;$/;"	m	struct:upgrade_func
+pdata	focaltech_core.h	/^    struct fts_ts_platform_data *pdata;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::fts_ts_platform_data
+pinctrl	focaltech_core.h	/^    struct pinctrl *pinctrl;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::pinctrl
+pins_active	focaltech_core.h	/^    struct pinctrl_state *pins_active;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::pinctrl_state
+pins_release	focaltech_core.h	/^    struct pinctrl_state *pins_release;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::pinctrl_state
+pins_suspend	focaltech_core.h	/^    struct pinctrl_state *pins_suspend;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::pinctrl_state
+pm_completion	focaltech_core.h	/^    struct completion pm_completion;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::completion
+pm_suspend	focaltech_core.h	/^    bool pm_suspend;$/;"	m	struct:fts_ts_data
+pnt_buf_size	focaltech_core.h	/^    int pnt_buf_size;$/;"	m	struct:fts_ts_data
+point_buf	focaltech_core.h	/^    u8 *point_buf;$/;"	m	struct:fts_ts_data
+point_num	focaltech_core.h	/^    int point_num;$/;"	m	struct:fts_ts_data
+point_num	focaltech_gesture.c	/^    u8 point_num;$/;"	m	struct:fts_gesture_st	file:
+power_disabled	focaltech_core.h	/^    bool power_disabled;$/;"	m	struct:fts_ts_data
+pram_ecc_check_mode	focaltech_flash.h	/^    int pram_ecc_check_mode;$/;"	m	struct:upgrade_func
+pramboot	focaltech_flash.h	/^    u8 *pramboot;$/;"	m	struct:upgrade_func
+pramboot_supported	focaltech_flash.h	/^    bool pramboot_supported;$/;"	m	struct:upgrade_func
+prc_work	focaltech_core.h	/^    struct delayed_work prc_work;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::delayed_work
+print_buffer	focaltech_test/focaltech_test.c	/^void print_buffer(int *buffer, int length, int line_num)$/;"	f
+print_ini_data	focaltech_test/focaltech_test_ini.c	/^static void print_ini_data(struct ini_data *ini)$/;"	f	file:
+print_thr_incell	focaltech_test/focaltech_test_ini.c	/^static void print_thr_incell(void)$/;"	f	file:
+print_thr_mc_sc	focaltech_test/focaltech_test_ini.c	/^static void print_thr_mc_sc(void)$/;"	f	file:
+print_thr_sc	focaltech_test/focaltech_test_ini.c	/^static void print_thr_sc(void)$/;"	f	file:
+proc	focaltech_core.h	/^    struct ftxxxx_proc proc;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::ftxxxx_proc
+proc_debug	focaltech_esdcheck.c	/^    u8      proc_debug          : 1;    \/* apk or adb use *\/$/;"	m	struct:fts_esdcheck_st	file:
+proc_entry	focaltech_core.h	/^    struct proc_dir_entry *proc_entry;$/;"	m	struct:ftxxxx_proc	typeref:struct:ftxxxx_proc::proc_dir_entry
+rawdata2_max	focaltech_test/focaltech_test.h	/^    int *rawdata2_max;$/;"	m	struct:incell_threshold
+rawdata2_max	focaltech_test/focaltech_test.h	/^    int rawdata2_max;$/;"	m	struct:incell_threshold_b
+rawdata2_min	focaltech_test/focaltech_test.h	/^    int *rawdata2_min;$/;"	m	struct:incell_threshold
+rawdata2_min	focaltech_test/focaltech_test.h	/^    int rawdata2_min;$/;"	m	struct:incell_threshold_b
+rawdata2_support	focaltech_test/focaltech_test.h	/^    bool rawdata2_support;$/;"	m	struct:test_funcs
+rawdata_h_max	focaltech_test/focaltech_test.h	/^    int *rawdata_h_max;$/;"	m	struct:mc_sc_threshold
+rawdata_h_max	focaltech_test/focaltech_test.h	/^    int rawdata_h_max;$/;"	m	struct:mc_sc_threshold_b
+rawdata_h_min	focaltech_test/focaltech_test.h	/^    int *rawdata_h_min;$/;"	m	struct:mc_sc_threshold
+rawdata_h_min	focaltech_test/focaltech_test.h	/^    int rawdata_h_min;$/;"	m	struct:mc_sc_threshold_b
+rawdata_l_max	focaltech_test/focaltech_test.h	/^    int *rawdata_l_max;$/;"	m	struct:mc_sc_threshold
+rawdata_l_max	focaltech_test/focaltech_test.h	/^    int rawdata_l_max;$/;"	m	struct:mc_sc_threshold_b
+rawdata_l_min	focaltech_test/focaltech_test.h	/^    int *rawdata_l_min;$/;"	m	struct:mc_sc_threshold
+rawdata_l_min	focaltech_test/focaltech_test.h	/^    int rawdata_l_min;$/;"	m	struct:mc_sc_threshold_b
+rawdata_max	focaltech_test/focaltech_test.h	/^    int *rawdata_max;$/;"	m	struct:incell_threshold
+rawdata_max	focaltech_test/focaltech_test.h	/^    int *rawdata_max;$/;"	m	struct:sc_threshold
+rawdata_max	focaltech_test/focaltech_test.h	/^    int rawdata_max;$/;"	m	struct:incell_threshold_b
+rawdata_max	focaltech_test/focaltech_test.h	/^    int rawdata_max;$/;"	m	struct:sc_threshold_b
+rawdata_max_vk	focaltech_test/focaltech_test.h	/^    int rawdata_max_vk;$/;"	m	struct:incell_threshold_b
+rawdata_min	focaltech_test/focaltech_test.h	/^    int *rawdata_min;$/;"	m	struct:incell_threshold
+rawdata_min	focaltech_test/focaltech_test.h	/^    int *rawdata_min;$/;"	m	struct:sc_threshold
+rawdata_min	focaltech_test/focaltech_test.h	/^    int rawdata_min;$/;"	m	struct:incell_threshold_b
+rawdata_min	focaltech_test/focaltech_test.h	/^    int rawdata_min;$/;"	m	struct:sc_threshold_b
+rawdata_min_vk	focaltech_test/focaltech_test.h	/^    int rawdata_min_vk;$/;"	m	struct:incell_threshold_b
+rawdata_set_hfreq	focaltech_test/focaltech_test.h	/^    int rawdata_set_hfreq;$/;"	m	struct:mc_sc_threshold_b
+rawdata_set_lfreq	focaltech_test/focaltech_test.h	/^    int rawdata_set_lfreq;$/;"	m	struct:mc_sc_threshold_b
+rawdata_test	focaltech_test/focaltech_test.h	/^    u32 rawdata_test                : 1;$/;"	m	struct:incell_testitem
+rawdata_test	focaltech_test/focaltech_test.h	/^    u32 rawdata_test                : 1;$/;"	m	struct:mc_sc_testitem
+rawdata_test	focaltech_test/focaltech_test.h	/^    u32 rawdata_test                : 1;$/;"	m	struct:sc_testitem
+rawdata_uniformity_test	focaltech_test/focaltech_test.h	/^    u32 rawdata_uniformity_test     : 1;$/;"	m	struct:mc_sc_testitem
+rawdata_vkey_check	focaltech_test/focaltech_test.h	/^    int rawdata_vkey_check;$/;"	m	struct:incell_threshold_b
+rdata_check	focaltech_spi.c	/^static int rdata_check(u8 *rdata, u32 rlen)$/;"	f	file:
+read_boot_id_need_reset	focaltech_flash.h	/^    bool read_boot_id_need_reset;$/;"	m	struct:upgrade_func
+read_mass_data	focaltech_test/focaltech_test.c	/^int read_mass_data(u8 addr, int byte_num, int *buf)$/;"	f
+read_rawdata	focaltech_test/focaltech_test.c	/^static int read_rawdata($/;"	f	file:
+reg	focaltech_ex_fun.c	/^    int reg;            \/*  register *\/$/;"	m	struct:rwreg_operation_t	file:
+report_mutex	focaltech_core.h	/^    struct mutex report_mutex;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::mutex
+res	focaltech_ex_fun.c	/^    int res;            \/*  0: success, otherwise: fail *\/$/;"	m	struct:rwreg_operation_t	file:
+reserved	focaltech_flash.h	/^    u16 reserved;$/;"	m	struct:upgrade_setting_nf
+reset_gpio	focaltech_core.h	/^    u32 reset_gpio;$/;"	m	struct:fts_ts_platform_data
+reset_gpio_flags	focaltech_core.h	/^    u32 reset_gpio_flags;$/;"	m	struct:fts_ts_platform_data
+result	focaltech_test/focaltech_test.h	/^    int result;$/;"	m	struct:fts_test
+result	focaltech_test/focaltech_test.h	/^    int result;$/;"	m	struct:item_info
+resume_work	focaltech_core.h	/^    struct work_struct resume_work;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::work_struct
+rom_idh	focaltech_common.h	/^    u8 rom_idh;$/;"	m	struct:ft_chip_t
+rom_idh	focaltech_flash.h	/^    u8 rom_idh;$/;"	m	struct:upgrade_setting_nf
+rom_idl	focaltech_common.h	/^    u8 rom_idl;$/;"	m	struct:ft_chip_t
+rom_idl	focaltech_flash.h	/^    u8 rom_idl;$/;"	m	struct:upgrade_setting_nf
+rw_op	focaltech_ex_fun.c	/^} rw_op;$/;"	v	typeref:struct:rwreg_operation_t	file:
+rwreg_operation_t	focaltech_ex_fun.c	/^static struct rwreg_operation_t {$/;"	s	file:
+rx_linearity_max	focaltech_test/focaltech_test.h	/^    int *rx_linearity_max;$/;"	m	struct:mc_sc_threshold
+rx_linearity_min	focaltech_test/focaltech_test.h	/^    int *rx_linearity_min;$/;"	m	struct:mc_sc_threshold
+rx_num	focaltech_test/focaltech_test.h	/^    int rx_num;$/;"	m	struct:fts_test_node
+sc	focaltech_test/focaltech_test.h	/^        struct sc_test sc;$/;"	m	union:fts_test::__anon5	typeref:struct:fts_test::__anon5::sc_test
+sc_node	focaltech_test/focaltech_test.h	/^    struct fts_test_node sc_node;$/;"	m	struct:fts_test	typeref:struct:fts_test::fts_test_node
+sc_test	focaltech_test/focaltech_test.h	/^struct sc_test {$/;"	s
+sc_testitem	focaltech_test/focaltech_test.h	/^struct sc_testitem {$/;"	s
+sc_threshold	focaltech_test/focaltech_test.h	/^struct sc_threshold {$/;"	s
+sc_threshold_b	focaltech_test/focaltech_test.h	/^struct sc_threshold_b {$/;"	s
+scap_cb_hi_check	focaltech_test/focaltech_test.h	/^    int scap_cb_hi_check;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_hi_max	focaltech_test/focaltech_test.h	/^    int *scap_cb_hi_max;$/;"	m	struct:mc_sc_threshold
+scap_cb_hi_max	focaltech_test/focaltech_test.h	/^    int scap_cb_hi_max;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_hi_min	focaltech_test/focaltech_test.h	/^    int *scap_cb_hi_min;$/;"	m	struct:mc_sc_threshold
+scap_cb_hi_min	focaltech_test/focaltech_test.h	/^    int scap_cb_hi_min;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_hov_check	focaltech_test/focaltech_test.h	/^    int scap_cb_hov_check;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_hov_max	focaltech_test/focaltech_test.h	/^    int *scap_cb_hov_max;$/;"	m	struct:mc_sc_threshold
+scap_cb_hov_max	focaltech_test/focaltech_test.h	/^    int scap_cb_hov_max;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_hov_min	focaltech_test/focaltech_test.h	/^    int *scap_cb_hov_min;$/;"	m	struct:mc_sc_threshold
+scap_cb_hov_min	focaltech_test/focaltech_test.h	/^    int scap_cb_hov_min;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_off_max	focaltech_test/focaltech_test.h	/^    int *scap_cb_off_max;$/;"	m	struct:mc_sc_threshold
+scap_cb_off_max	focaltech_test/focaltech_test.h	/^    int scap_cb_off_max;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_off_min	focaltech_test/focaltech_test.h	/^    int *scap_cb_off_min;$/;"	m	struct:mc_sc_threshold
+scap_cb_off_min	focaltech_test/focaltech_test.h	/^    int scap_cb_off_min;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_on_max	focaltech_test/focaltech_test.h	/^    int *scap_cb_on_max;$/;"	m	struct:mc_sc_threshold
+scap_cb_on_max	focaltech_test/focaltech_test.h	/^    int scap_cb_on_max;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_on_min	focaltech_test/focaltech_test.h	/^    int *scap_cb_on_min;$/;"	m	struct:mc_sc_threshold
+scap_cb_on_min	focaltech_test/focaltech_test.h	/^    int scap_cb_on_min;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_test	focaltech_test/focaltech_test.h	/^    u32 scap_cb_test                : 1;$/;"	m	struct:mc_sc_testitem
+scap_cb_wp_off_check	focaltech_test/focaltech_test.h	/^    int scap_cb_wp_off_check;$/;"	m	struct:mc_sc_threshold_b
+scap_cb_wp_on_check	focaltech_test/focaltech_test.h	/^    int scap_cb_wp_on_check;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_hi_check	focaltech_test/focaltech_test.h	/^    int scap_rawdata_hi_check;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_hi_max	focaltech_test/focaltech_test.h	/^    int *scap_rawdata_hi_max;$/;"	m	struct:mc_sc_threshold
+scap_rawdata_hi_max	focaltech_test/focaltech_test.h	/^    int scap_rawdata_hi_max;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_hi_min	focaltech_test/focaltech_test.h	/^    int *scap_rawdata_hi_min;$/;"	m	struct:mc_sc_threshold
+scap_rawdata_hi_min	focaltech_test/focaltech_test.h	/^    int scap_rawdata_hi_min;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_hov_check	focaltech_test/focaltech_test.h	/^    int scap_rawdata_hov_check;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_hov_max	focaltech_test/focaltech_test.h	/^    int *scap_rawdata_hov_max;$/;"	m	struct:mc_sc_threshold
+scap_rawdata_hov_max	focaltech_test/focaltech_test.h	/^    int scap_rawdata_hov_max;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_hov_min	focaltech_test/focaltech_test.h	/^    int *scap_rawdata_hov_min;$/;"	m	struct:mc_sc_threshold
+scap_rawdata_hov_min	focaltech_test/focaltech_test.h	/^    int scap_rawdata_hov_min;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_off_max	focaltech_test/focaltech_test.h	/^    int *scap_rawdata_off_max;$/;"	m	struct:mc_sc_threshold
+scap_rawdata_off_max	focaltech_test/focaltech_test.h	/^    int scap_rawdata_off_max;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_off_min	focaltech_test/focaltech_test.h	/^    int *scap_rawdata_off_min;$/;"	m	struct:mc_sc_threshold
+scap_rawdata_off_min	focaltech_test/focaltech_test.h	/^    int scap_rawdata_off_min;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_on_max	focaltech_test/focaltech_test.h	/^    int *scap_rawdata_on_max;$/;"	m	struct:mc_sc_threshold
+scap_rawdata_on_max	focaltech_test/focaltech_test.h	/^    int scap_rawdata_on_max;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_on_min	focaltech_test/focaltech_test.h	/^    int *scap_rawdata_on_min;$/;"	m	struct:mc_sc_threshold
+scap_rawdata_on_min	focaltech_test/focaltech_test.h	/^    int scap_rawdata_on_min;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_test	focaltech_test/focaltech_test.h	/^    u32 scap_rawdata_test           : 1;$/;"	m	struct:mc_sc_testitem
+scap_rawdata_wp_off_check	focaltech_test/focaltech_test.h	/^    int scap_rawdata_wp_off_check;$/;"	m	struct:mc_sc_threshold_b
+scap_rawdata_wp_on_check	focaltech_test/focaltech_test.h	/^    int scap_rawdata_wp_on_check;$/;"	m	struct:mc_sc_threshold_b
+section	focaltech_test/focaltech_test_ini.h	/^    struct ini_section section[MAX_INI_SECTION_NUM];$/;"	m	struct:ini_data	typeref:struct:ini_data::ini_section
+section_num	focaltech_test/focaltech_test_ini.h	/^    int section_num;$/;"	m	struct:ini_data
+setting_nf	focaltech_flash.h	/^    struct upgrade_setting_nf *setting_nf;$/;"	m	struct:fts_upgrade	typeref:struct:fts_upgrade::upgrade_setting_nf
+shex_to_int	focaltech_ex_fun.c	/^static int shex_to_int(const char *hex_buf, int size)$/;"	f	file:
+shex_to_u8	focaltech_ex_fun.c	/^static u8 shex_to_u8(const char *hex_buf, int size)$/;"	f	file:
+short_cc	focaltech_test/focaltech_test.h	/^    int short_cc;$/;"	m	struct:mc_sc_threshold_b
+short_cg	focaltech_test/focaltech_test.h	/^    int short_cg;$/;"	m	struct:mc_sc_threshold_b
+short_get_adc_data_mc	focaltech_test/focaltech_test.c	/^int short_get_adc_data_mc(u8 retval, int byte_num, int *adc_buf, u8 mode)$/;"	f
+short_get_adcdata_incell	focaltech_test/focaltech_test.c	/^int short_get_adcdata_incell(u8 retval, u8 ch_num, int byte_num, int *adc_buf)$/;"	f
+short_min	focaltech_test/focaltech_test.h	/^    int short_min;$/;"	m	struct:sc_threshold_b
+short_res_min	focaltech_test/focaltech_test.h	/^    int short_res_min;$/;"	m	struct:incell_threshold_b
+short_res_vk_min	focaltech_test/focaltech_test.h	/^    int short_res_vk_min;$/;"	m	struct:incell_threshold_b
+short_test	focaltech_test/focaltech_test.h	/^    u32 short_test                  : 1;$/;"	m	struct:incell_testitem
+short_test	focaltech_test/focaltech_test.h	/^    u32 short_test                  : 1;$/;"	m	struct:mc_sc_testitem
+short_test	focaltech_test/focaltech_test.h	/^    u32 short_test                  : 1;$/;"	m	struct:sc_testitem
+show_data	focaltech_test/focaltech_test.c	/^void show_data(int *data, bool key)$/;"	f
+show_data_mc_sc	focaltech_test/focaltech_test.c	/^void show_data_mc_sc(int *data)$/;"	f
+spi	focaltech_core.h	/^    struct spi_device *spi;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::spi_device
+spi_pe	focaltech_flash.h	/^    bool spi_pe;$/;"	m	struct:upgrade_setting_nf
+start_scan	focaltech_test/focaltech_test.c	/^int start_scan(void)$/;"	f
+start_test	focaltech_test/focaltech_test.h	/^    int (*start_test)(void);$/;"	m	struct:test_funcs
+start_test_ft8006sp	focaltech_test/supported_ic/focaltech_test_ft8006s_aa.c	/^static int start_test_ft8006sp(void)$/;"	f	file:
+startscan_mode	focaltech_test/focaltech_test.h	/^    int startscan_mode;$/;"	m	struct:test_funcs
+str_space_remove	focaltech_test/focaltech_test_ini.c	/^static void str_space_remove(char *str)$/;"	f	file:
+suspend	focaltech_esdcheck.c	/^    u8      suspend             : 1;$/;"	m	struct:fts_esdcheck_st	file:
+suspended	focaltech_core.h	/^    bool suspended;$/;"	m	struct:fts_ts_data
+sys_delay	focaltech_test/focaltech_test.c	/^void sys_delay(int ms)$/;"	f
+test_func_ft8006sp	focaltech_test/supported_ic/focaltech_test_ft8006s_aa.c	/^struct test_funcs test_func_ft8006sp = {$/;"	v	typeref:struct:test_funcs
+test_func_list	focaltech_test/focaltech_test.c	/^struct test_funcs *test_func_list[] = {$/;"	v	typeref:struct:test_funcs
+test_funcs	focaltech_test/focaltech_test.h	/^struct test_funcs {$/;"	s
+test_hw_type	focaltech_test/focaltech_test.h	/^enum test_hw_type {$/;"	g
+test_num	focaltech_test/focaltech_test.h	/^    int test_num;$/;"	m	struct:fts_test
+test_scan_mode	focaltech_test/focaltech_test.h	/^enum test_scan_mode {$/;"	g
+testdata	focaltech_test/focaltech_test.h	/^    struct fts_test_data testdata;$/;"	m	struct:fts_test	typeref:struct:fts_test::fts_test_data
+testresult	focaltech_test/focaltech_test.h	/^    char *testresult;$/;"	m	struct:fts_test
+testresult_len	focaltech_test/focaltech_test.h	/^    int testresult_len;$/;"	m	struct:fts_test
+thr	focaltech_test/focaltech_test.h	/^    struct incell_threshold thr;$/;"	m	struct:incell_test	typeref:struct:incell_test::incell_threshold
+thr	focaltech_test/focaltech_test.h	/^    struct mc_sc_threshold thr;$/;"	m	struct:mc_sc_test	typeref:struct:mc_sc_test::mc_sc_threshold
+thr	focaltech_test/focaltech_test.h	/^    struct sc_threshold thr;$/;"	m	struct:sc_test	typeref:struct:sc_test::sc_threshold
+tmp	focaltech_test/focaltech_test.h	/^        int tmp;$/;"	m	union:incell_test::__anon2
+tmp	focaltech_test/focaltech_test.h	/^        u32 tmp;$/;"	m	union:mc_sc_test::__anon3
+tmp	focaltech_test/focaltech_test.h	/^        u32 tmp;$/;"	m	union:sc_test::__anon4
+tmp	focaltech_test/focaltech_test_ini.h	/^    struct ini_keyword *tmp;$/;"	m	struct:ini_data	typeref:struct:ini_data::ini_keyword
+touch_point	focaltech_core.h	/^    int touch_point;$/;"	m	struct:fts_ts_data
+touchs	focaltech_core.h	/^    int touchs;$/;"	m	struct:fts_ts_data
+tp_need_recovery	focaltech_esdcheck.c	/^static int tp_need_recovery; \/* LCD reset cause Tp reset *\/$/;"	v	file:
+true	focaltech_test/focaltech_test.h	41;"	d
+ts_data	focaltech_flash.h	/^    struct fts_ts_data *ts_data;$/;"	m	struct:fts_upgrade	typeref:struct:fts_upgrade::fts_ts_data
+ts_data	focaltech_test/focaltech_test.h	/^    struct fts_ts_data *ts_data;$/;"	m	struct:fts_test	typeref:struct:fts_test::fts_ts_data
+ts_event	focaltech_core.h	/^struct ts_event {$/;"	s
+ts_ic_info	focaltech_common.h	/^struct ts_ic_info {$/;"	s
+ts_workqueue	focaltech_core.h	/^    struct workqueue_struct *ts_workqueue;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::workqueue_struct
+tv	focaltech_test/focaltech_test.h	/^    struct timeval tv;$/;"	m	struct:fts_test	typeref:struct:fts_test::timeval
+tx_linearity_max	focaltech_test/focaltech_test.h	/^    int *tx_linearity_max;$/;"	m	struct:mc_sc_threshold
+tx_linearity_min	focaltech_test/focaltech_test.h	/^    int *tx_linearity_min;$/;"	m	struct:mc_sc_threshold
+tx_num	focaltech_test/focaltech_test.h	/^    int tx_num;$/;"	m	struct:fts_test_node
+type	focaltech_common.h	/^    u64 type;$/;"	m	struct:ft_chip_t
+type	focaltech_ex_fun.c	/^    int type;           \/*  0: read, 1: write *\/$/;"	m	struct:rwreg_operation_t	file:
+u	focaltech_test/focaltech_test.h	/^    } u;$/;"	m	struct:incell_test	typeref:union:incell_test::__anon2
+u	focaltech_test/focaltech_test.h	/^    } u;$/;"	m	struct:mc_sc_test	typeref:union:mc_sc_test::__anon3
+u	focaltech_test/focaltech_test.h	/^    } u;$/;"	m	struct:sc_test	typeref:union:sc_test::__anon4
+uniformity_check_min_max	focaltech_test/focaltech_test.h	/^    int uniformity_check_min_max;$/;"	m	struct:mc_sc_threshold_b
+uniformity_check_rx	focaltech_test/focaltech_test.h	/^    int uniformity_check_rx;$/;"	m	struct:mc_sc_threshold_b
+uniformity_check_tx	focaltech_test/focaltech_test.h	/^    int uniformity_check_tx;$/;"	m	struct:mc_sc_threshold_b
+uniformity_min_max_hole	focaltech_test/focaltech_test.h	/^    int uniformity_min_max_hole;$/;"	m	struct:mc_sc_threshold_b
+uniformity_rx_hole	focaltech_test/focaltech_test.h	/^    int uniformity_rx_hole;$/;"	m	struct:mc_sc_threshold_b
+uniformity_tx_hole	focaltech_test/focaltech_test.h	/^    int uniformity_tx_hole;$/;"	m	struct:mc_sc_threshold_b
+unused	focaltech_esdcheck.c	/^    u8      unused              : 4;$/;"	m	struct:fts_esdcheck_st	file:
+upgrade	focaltech_flash.h	/^    int (*upgrade)(u8 *, u32);$/;"	m	struct:upgrade_func
+upgrade_func	focaltech_flash.h	/^struct upgrade_func {$/;"	s
+upgrade_module	focaltech_flash.h	/^struct upgrade_module {$/;"	s
+upgrade_setting_list	focaltech_flash.c	/^struct upgrade_setting_nf upgrade_setting_list[] = {$/;"	v	typeref:struct:upgrade_setting_nf
+upgrade_setting_nf	focaltech_flash.h	/^struct upgrade_setting_nf {$/;"	s
+upgspec_version	focaltech_flash.h	/^    int upgspec_version;$/;"	m	struct:upgrade_func
+upgsts_boot	focaltech_flash.h	/^    u8 upgsts_boot;$/;"	m	struct:upgrade_setting_nf
+v3_pattern	focaltech_test/focaltech_test.h	/^    bool v3_pattern;$/;"	m	struct:fts_test
+va_touch_thr	focaltech_test/focaltech_test.h	/^    u8 va_touch_thr;$/;"	m	struct:fts_test
+val	focaltech_ex_fun.c	/^    int val;            \/*  length = 1; read: return value, write: op return *\/$/;"	m	struct:rwreg_operation_t	file:
+value	focaltech_test/focaltech_test_ini.h	/^    char value[MAX_KEYWORD_VALUE_LEN];$/;"	m	struct:ini_keyword
+vcc_i2c	focaltech_core.h	/^    struct regulator *vcc_i2c;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::regulator
+vdd	focaltech_core.h	/^    struct regulator *vdd;$/;"	m	struct:fts_ts_data	typeref:struct:fts_ts_data::regulator
+vendor_name	focaltech_flash.h	/^    char vendor_name[MAX_MODULE_VENDOR_NAME_LEN];$/;"	m	struct:upgrade_module
+vk_touch_thr	focaltech_test/focaltech_test.h	/^    u8 vk_touch_thr;$/;"	m	struct:fts_test
+wait_state_update	focaltech_test/focaltech_test.c	/^int wait_state_update(u8 retval)$/;"	f
+wp_type	focaltech_test/focaltech_test.h	/^enum wp_type {$/;"	g
+write_pramboot_private	focaltech_flash.h	/^    int (*write_pramboot_private)(void);$/;"	m	struct:upgrade_func
+x	focaltech_core.h	/^    int x;      \/*x coordinate *\/$/;"	m	struct:ts_event
+x_max	focaltech_core.h	/^    u32 x_max;$/;"	m	struct:fts_ts_platform_data
+x_min	focaltech_core.h	/^    u32 x_min;$/;"	m	struct:fts_ts_platform_data
+y	focaltech_core.h	/^    int y;      \/*y coordinate *\/$/;"	m	struct:ts_event
+y_max	focaltech_core.h	/^    u32 y_max;$/;"	m	struct:fts_ts_platform_data
+y_min	focaltech_core.h	/^    u32 y_min;$/;"	m	struct:fts_ts_platform_data

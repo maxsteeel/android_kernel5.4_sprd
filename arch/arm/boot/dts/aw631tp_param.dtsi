@@ -1,0 +1,24 @@
+&adaptive_touchscreen {
+
+		tp_max_x = <480>;
+		tp_max_y = <1014>;
+		tp_avdd_supply = "1850";
+		tp_point_max = <5>;
+		tp_upgrade_switch = <1>;
+		//tp_upgrade_status = <0>;
+		tp_esd_check = <0>;
+		tp_ps_status = <1>;
+		tp_sensorhub_status = <0>;
+		tp_gesture_status = <1>;
+		tp_ic_num = <1>;
+
+	focaltech:ats_ft6436u{//38
+
+		tp_vendor_num = <1>;
+		tp_upgrade_fw = <1>;
+		tp_fw_buf_size = <47176>;
+		tp_vendor_id = /bits/ 8 <0x67>;
+	    tp_vendor_name0 = "DJ";
+
+	};
+};
