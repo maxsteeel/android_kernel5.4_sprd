@@ -2,7 +2,6 @@
 #
 # Makefile for the linux kernel.
 #
-include spr_target.min
 
 ccflags-y := -fno-function-sections -fno-data-sections
 
