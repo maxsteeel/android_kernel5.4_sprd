@@ -30,7 +30,7 @@
 
 /* device name */
 #define UART_NR_MAX		8
-#define SPRD_TTY_NAME		"ttyS"
+#define SPRD_TTY_NAME		"ttySPRD"
 #define SPRD_FIFO_SIZE		128
 #define SPRD_DEF_RATE		26000000
 #define SPRD_BAUD_IO_LIMIT	3000000
@@ -1013,7 +1013,7 @@ static void sprd_console_write(struct console *co, const char *s,
 		spin_unlock_irqrestore(&port->lock, flags);
 }
 
-static int sprd_console_setup(struct console *co, char *options)
+static int __init sprd_console_setup(struct console *co, char *options)
 {
 	struct sprd_uart_port *sprd_uart_port;
 	int ret;
@@ -1190,9 +1190,6 @@ static int sprd_clk_init(struct uart_port *uport)
 		return -EINVAL;
 
 	iomem_regs = ioremap_nocache(clk_base, 0x100);
-	if(iomem_regs == NULL)
-		return -EINVAL;
-
 	switch (sel) {
 	case 0:
 		uport->uartclk = SPRD_DEFAULT_SOURCE_CLK;
