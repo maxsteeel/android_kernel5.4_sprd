@@ -1983,6 +1983,7 @@ void sc2355_pcie_throughput_ctl_core_pd(unsigned int len)
 
 int pcie_init(struct sprd_hif *hif)
 {
+	struct tx_mgmt *tx_mgmt;
 	u8 i;
 	int ret = -EINVAL;
 
@@ -2019,7 +2020,7 @@ int pcie_init(struct sprd_hif *hif)
 	}
 	
 	sc2355_pcie_throughput_static_init();
-	struct tx_mgmt *tx_mgmt = (struct tx_mgmt *)hif->tx_mgmt;
+	tx_mgmt = (struct tx_mgmt *)hif->tx_mgmt;
 	//reset thread uclamp param
 	sc2355_set_thread_uclamp(tx_mgmt->tx_thread, 0);
 
