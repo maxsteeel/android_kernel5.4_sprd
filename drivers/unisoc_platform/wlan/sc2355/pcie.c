@@ -1054,6 +1054,25 @@ unsigned char sc2355_find_lut_index(struct sprd_hif *hif, struct sprd_vif *vif)
 		}
 	}
 
+	if (vif->mode == SPRD_MODE_STATION ||
+	    vif->mode == SPRD_MODE_P2P_CLIENT) {
+		pr_err("%s,%d,bssid not found, multicast?\n"
+		       "default of STA/GC = 0,\n", __func__, vif->ctx_id);
+		return 0;
+	}
+	if (vif->mode == SPRD_MODE_AP) {
+		pr_err("%s,%d,bssid not found, multicast?\n"
+		       "default of AP = 4\n", __func__, vif->ctx_id);
+		return 4;
+	}
+	if (vif->mode == SPRD_MODE_P2P_GO) {
+		pr_err("%s,%d,bssid not found, multicast?\n"
+		       "default of GO = 5\n", __func__, vif->ctx_id);
+		return 5;
+	}
+	return 0;
+}
+
 int sc2355_hif_fill_msdu_dscr(struct sprd_vif *vif,
 			      struct sk_buff *skb, u8 type, u8 offset)
 {
