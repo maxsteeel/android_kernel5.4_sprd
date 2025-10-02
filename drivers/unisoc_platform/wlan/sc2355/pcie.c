@@ -1120,7 +1120,7 @@ int sc2355_hif_fill_msdu_dscr(struct sprd_vif *vif,
 #endif
 	}
 
-	hif->skb_da = skb->data;
+	memcpy(hif->skb_da, skb->data, 6);
 
 	lut_index = sc2355_find_lut_index(hif, vif);
 	if (lut_index < 6 && (!sc2355_is_group(hif->skb_da))) {
