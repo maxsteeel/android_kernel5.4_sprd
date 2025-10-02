@@ -12,13 +12,15 @@
 #include <linux/io.h>
 #include <linux/regmap.h>
 #include <linux/of_device.h>
-
+#include <linux/pm_qos.h>
+#include <misc/wcn_bus.h>
 #include <misc/marlin_platform.h>
 
 #include "common/common.h"
 #include "common/chip_ops.h"
 #include "common/delay_work.h"
 #include "pcie.h"
+#include "sdio.h"
 #include "rx.h"
 #include "tx.h"
 #include "qos.h"
@@ -420,6 +422,49 @@ static int pcie_rx_handle(int chn, struct mbuf_t *head,
 	return 0;
 }
 
+#ifdef CONFIG_SPRD_WLAN_NAPI
+static int pcie_data_rx_handle(int chn, struct mbuf_t *head,
+			       struct mbuf_t *tail, int num)
+{
+	struct sprd_hif *hif = sc2355_get_hif();
+	struct rx_mgmt *rx_mgmt = (struct rx_mgmt *)hif->rx_mgmt;
+	struct sprd_msg *msg = NULL;
+
+	pr_debug("%s: channel:%d head:%p tail:%p num:%d\n",
+		 __func__, chn, head, tail, num);
+
+	/* FIXME: Should we use replace msg? */
+	msg = sprd_alloc_msg(&rx_mgmt->rx_data_list);
+	if (!msg) {
+		pr_err("%s: no more msg\n", __func__);
+		sprdwcn_bus_push_list(chn, head, tail, num);
+		return 0;
+	}
+
+	sprd_fill_msg(msg, NULL, (void *)head, num);
+	msg->fifo_id = chn;
+	msg->buffer_type = SPRD_DEFRAG_MEM;
+	msg->data = (void *)tail;
+
+	sprd_queue_msg(msg, &rx_mgmt->rx_data_list);
+	napi_schedule(&rx_mgmt->napi);
+
+	return 0;
+}
+#endif
+
+static int pcie_rx_cmd_push(int chn, struct mbuf_t **head, struct mbuf_t **tail,
+			    int *num)
+{
+	return pcie_rx_common_push(chn, head, tail, num, SPRD_MAX_CMD_RXLEN);
+}
+
+static int pcie_rx_data_push(int chn, struct mbuf_t **head,
+			     struct mbuf_t **tail, int *num)
+{
+	return pcie_rx_common_push(chn, head, tail, num, SPRD_MAX_DATA_RXLEN);
+}
+
 /* mode:
  * 0 - suspend
  * 1 - resume
@@ -494,115 +539,6 @@ static int pcie_suspend_resume_handle(int chn, int mode)
 			__func__, __LINE__, ret, hif->sleep_time / 1000000);
 		return ret;
 	}
-	return -EBUSY;
-}
-
-
-#ifdef CONFIG_SPRD_WLAN_NAPI
-static int pcie_data_rx_handle(int chn, struct mbuf_t *head,
-			       struct mbuf_t *tail, int num)
-{
-	struct sprd_hif *hif = sc2355_get_hif();
-	struct rx_mgmt *rx_mgmt = (struct rx_mgmt *)hif->rx_mgmt;
-	struct sprd_msg *msg = NULL;
-
-	pr_debug("%s: channel:%d head:%p tail:%p num:%d\n",
-		 __func__, chn, head, tail, num);
-
-	/* FIXME: Should we use replace msg? */
-	msg = sprd_alloc_msg(&rx_mgmt->rx_data_list);
-	if (!msg) {
-		pr_err("%s: no more msg\n", __func__);
-		sprdwcn_bus_push_list(chn, head, tail, num);
-		return 0;
-	}
-
-	sprd_fill_msg(msg, NULL, (void *)head, num);
-	msg->fifo_id = chn;
-	msg->buffer_type = SPRD_DEFRAG_MEM;
-	msg->data = (void *)tail;
-
-	sprd_queue_msg(msg, &rx_mgmt->rx_data_list);
-	napi_schedule(&rx_mgmt->napi);
-
-	return 0;
-}
-#endif
-
-static int pcie_rx_cmd_push(int chn, struct mbuf_t **head, struct mbuf_t **tail,
-			    int *num)
-{
-	return pcie_rx_common_push(chn, head, tail, num, SPRD_MAX_CMD_RXLEN);
-}
-
-static int pcie_rx_data_push(int chn, struct mbuf_t **head,
-			     struct mbuf_t **tail, int *num)
-{
-	return pcie_rx_common_push(chn, head, tail, num, SPRD_MAX_DATA_RXLEN);
-}
-
-/*
- * mode:
- * 0 - suspend
- * 1 - resume
- */
-static int pcie_suspend_resume_handle(int chn, int mode)
-{
-	struct sprd_hif *hif = sc2355_get_hif();
-	struct sprd_priv *priv = hif->priv;
-	struct tx_mgmt *tx_mgmt = (struct tx_mgmt *)hif->tx_mgmt;
-	int ret;
-	struct sprd_vif *vif = NULL, *tmp_vif;
-	struct timespec time;
-
-	spin_lock_bh(&priv->list_lock);
-	list_for_each_entry(tmp_vif, &priv->vif_list, vif_node) {
-		if (tmp_vif->state & VIF_STATE_OPEN) {
-			vif = tmp_vif;
-			break;
-		}
-	}
-	spin_unlock_bh(&priv->list_lock);
-
-	if (!vif || hif->cp_asserted) {
-		pr_err("%s, %d, error! NULL vif or assert\n", __func__,
-		       __LINE__);
-		sprd_put_vif(vif);
-		return -EBUSY;
-	}
-
-	if (mode == 0) {
-		if (atomic_read(&tx_mgmt->tx_list_qos_pool.ref) > 0 ||
-		    atomic_read(&tx_mgmt->tx_list_cmd.ref) > 0 ||
-		    !list_empty(&tx_mgmt->xmit_msg_list.to_send_list) ||
-		    !list_empty(&tx_mgmt->xmit_msg_list.to_free_list)) {
-			pr_info("%s, %d,Q not empty suspend not allowed\n",
-				__func__, __LINE__);
-			sprd_put_vif(vif);
-			return -EBUSY;
-		}
-		hif->suspend_mode = SPRD_PS_SUSPENDING;
-		getnstimeofday(&time);
-		hif->sleep_time = timespec_to_ns(&time);
-		priv->is_suspending = 1;
-		ret = sprd_power_save(priv, vif, SPRD_SUSPEND_RESUME, 0);
-		if (ret == 0)
-			hif->suspend_mode = SPRD_PS_SUSPENDED;
-		else
-			hif->suspend_mode = SPRD_PS_RESUMED;
-		sprd_put_vif(vif);
-		return ret;
-	} else if (mode == 1) {
-		hif->suspend_mode = SPRD_PS_RESUMING;
-		getnstimeofday(&time);
-		hif->sleep_time = timespec_to_ns(&time) - hif->sleep_time;
-		ret = sprd_power_save(priv, vif, SPRD_SUSPEND_RESUME, 1);
-		pr_info("%s, %d,resume ret=%d, resume after %lu ms\n",
-			__func__, __LINE__, ret, hif->sleep_time / 1000000);
-		sprd_put_vif(vif);
-		return ret;
-	}
-	sprd_put_vif(vif);
 	return -EBUSY;
 }
 
@@ -2083,7 +2019,7 @@ int pcie_init(struct sprd_hif *hif)
 	}
 	
 	sc2355_pcie_throughput_static_init();
-	tx_mgmt = (struct tx_mgmt *)hif->tx_mgmt;
+	struct tx_mgmt *tx_mgmt = (struct tx_mgmt *)hif->tx_mgmt;
 	//reset thread uclamp param
 	sc2355_set_thread_uclamp(tx_mgmt->tx_thread, 0);
 
