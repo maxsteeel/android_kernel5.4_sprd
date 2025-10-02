@@ -420,6 +420,84 @@ static int pcie_rx_handle(int chn, struct mbuf_t *head,
 	return 0;
 }
 
+/* mode:
+ * 0 - suspend
+ * 1 - resume
+ */
+struct throughput_sta throughput_static;
+static int pcie_suspend_resume_handle(int chn, int mode)
+{
+	struct sprd_hif *hif = sc2355_get_hif();
+	struct sprd_priv *priv = hif->priv;
+	struct tx_mgmt *tx_mgmt = (struct tx_mgmt *)hif->tx_mgmt;
+	int ret;
+	struct sprd_vif *vif = NULL, *tmp_vif;
+	struct timespec time;
+
+	spin_lock_bh(&priv->list_lock);
+	list_for_each_entry(tmp_vif, &priv->vif_list, vif_node) {
+		if (tmp_vif->state & VIF_STATE_OPEN) {
+			vif = tmp_vif;
+			break;
+		}
+	}
+	spin_unlock_bh(&priv->list_lock);
+
+	/* there is no need to suspend or resume since vif is NULL */
+	if (!vif)
+		return 0;
+
+	if (hif->cp_asserted) {
+		pr_err("%s, %d, error! cp2 has asserted!\n", __func__,
+		       __LINE__);
+		return 0;
+	}
+
+	if (throughput_static.disable_pd_flag) {
+		throughput_static.disable_pd_flag = false;
+		//allow core powerdown
+		pm_qos_update_request(&throughput_static.pm_qos_request_idle,
+					      PM_QOS_CPU_DMA_LAT_DEFAULT_VALUE);
+	}
+
+	if (throughput_static.uclamp_set_flag) {
+		//reset thread uclamp param
+		sc2355_set_thread_uclamp(tx_mgmt->tx_thread, 0);
+		throughput_static.uclamp_set_flag = false;
+	}
+
+	if (mode == 0) {
+		if (atomic_read(&tx_mgmt->tx_list_qos_pool.ref) > 0 ||
+		    atomic_read(&tx_mgmt->tx_list_cmd.ref) > 0 ||
+		    !list_empty(&tx_mgmt->xmit_msg_list.to_send_list) ||
+		    !list_empty(&tx_mgmt->xmit_msg_list.to_free_list)) {
+			pr_info("%s, %d,Q not empty suspend not allowed\n",
+				__func__, __LINE__);
+			return -EBUSY;
+		}
+		hif->suspend_mode = SPRD_PS_SUSPENDING;
+		getnstimeofday(&time);
+		hif->sleep_time = timespec_to_ns(&time);
+		priv->is_suspending = 1;
+		ret = sprd_power_save(priv, vif, SPRD_SUSPEND_RESUME, 0);
+		if (ret == 0)
+			hif->suspend_mode = SPRD_PS_SUSPENDED;
+		else
+			hif->suspend_mode = SPRD_PS_RESUMED;
+		return ret;
+	} else if (mode == 1) {
+		hif->suspend_mode = SPRD_PS_RESUMING;
+		getnstimeofday(&time);
+		hif->sleep_time = timespec_to_ns(&time) - hif->sleep_time;
+		ret = sprd_power_save(priv, vif, SPRD_SUSPEND_RESUME, 1);
+		pr_info("%s, %d,resume ret=%d, resume after %lu ms\n",
+			__func__, __LINE__, ret, hif->sleep_time / 1000000);
+		return ret;
+	}
+	return -EBUSY;
+}
+
+
 #ifdef CONFIG_SPRD_WLAN_NAPI
 static int pcie_data_rx_handle(int chn, struct mbuf_t *head,
 			       struct mbuf_t *tail, int num)
@@ -1923,6 +2001,50 @@ int sc2355_fc_test_send_num(struct sprd_hif *hif,
 
 }
 
+void sc2355_pcie_throughput_static_init(void)
+{
+	throughput_static.tx_bytes = 0;
+	throughput_static.last_time = jiffies;
+	throughput_static.rx_bytes = 0;
+	throughput_static.rx_last_time = jiffies;
+	throughput_static.disable_pd_flag = false;
+	throughput_static.uclamp_set_flag = false;
+	throughput_static.throughput_tx = 0;
+	throughput_static.throughput_rx = 0;
+	pm_qos_add_request(&throughput_static.pm_qos_request_idle,
+			   PM_QOS_CPU_DMA_LATENCY, PM_QOS_CPU_DMA_LAT_DEFAULT_VALUE);
+}
+
+void sc2355_pcie_throughput_static_deinit(void)
+{
+	pm_qos_remove_request(&throughput_static.pm_qos_request_idle);
+}
+
+void sc2355_pcie_throughput_ctl_core_pd(unsigned int len)
+{
+	throughput_static.tx_bytes += len;
+	if (time_after(jiffies, throughput_static.last_time +  msecs_to_jiffies(1000))) {
+		throughput_static.last_time = jiffies;
+		if (throughput_static.tx_bytes >= DISABLE_PD_THRESHOLD) {
+			if (!throughput_static.disable_pd_flag)	{
+				throughput_static.disable_pd_flag = true;
+				// forbid core powerdown
+				pm_qos_update_request(&throughput_static.pm_qos_request_idle,
+					      100);
+			}
+		} else {
+			if (throughput_static.disable_pd_flag) {
+				throughput_static.disable_pd_flag = false;
+				//allow core powerdown
+				pm_qos_update_request(&throughput_static.pm_qos_request_idle,
+					      PM_QOS_CPU_DMA_LAT_DEFAULT_VALUE);
+			}
+		}
+		throughput_static.throughput_tx = throughput_static.tx_bytes;
+		throughput_static.tx_bytes = 0;
+	}
+}
+
 int pcie_init(struct sprd_hif *hif)
 {
 	u8 i;
@@ -1959,6 +2081,11 @@ int pcie_init(struct sprd_hif *hif)
 		pr_err("%s tx_list init failed\n", __func__);
 		goto err_tx_init;
 	}
+	
+	sc2355_pcie_throughput_static_init();
+	tx_mgmt = (struct tx_mgmt *)hif->tx_mgmt;
+	//reset thread uclamp param
+	sc2355_set_thread_uclamp(tx_mgmt->tx_thread, 0);
 
 	if (hif->hw_type == SPRD_HW_SC2355_PCIE) {
 		sc2355_hif.mchn_ops = pcie_hif_ops;
