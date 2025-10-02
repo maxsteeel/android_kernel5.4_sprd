@@ -1004,9 +1004,6 @@ unsigned char sc2355_find_lut_index(struct sprd_hif *hif, struct sprd_vif *vif)
 {
 	unsigned char i;
 
-	if (!hif->skb_da)/*TODO*/
-		goto out;
-
 	pr_debug("%s,bssid: %02x:%02x:%02x:%02x:%02x:%02x\n", __func__,
 		 hif->skb_da[0], hif->skb_da[1], hif->skb_da[2],
 		 hif->skb_da[3], hif->skb_da[4], hif->skb_da[5]);
