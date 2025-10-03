@@ -1,0 +1,2 @@
+. ${ROOT_DIR}/${KERNEL_DIR}/build.config.gki_unisoc.aarch64
+BUILD_INITRAMFS=1
