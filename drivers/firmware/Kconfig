@@ -311,7 +311,7 @@ config HAVE_ARM_SMCCC
 
 config SPRD_SIP_FW
 	tristate "sprd SoC implementation-specific services"
-	default m
+	default y
 	depends on HAVE_ARM_SMCCC
 	help
 	  Provides interfaces to SoC implementation-specific services on sprd
