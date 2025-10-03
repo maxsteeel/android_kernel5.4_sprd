@@ -246,7 +246,6 @@ config ARCH_TEGRA
 config ARCH_SPRD
 	bool "Spreadtrum SoC platform"
 	select PM_GENERIC_DOMAINS
-	default y
 	help
 	  Support for Spreadtrum ARM based SoCs
 
