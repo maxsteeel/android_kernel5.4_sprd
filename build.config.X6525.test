@@ -2,11 +2,7 @@
 . ${ROOT_DIR}/${KERNEL_DIR}/build.config.aarch64
 
 BUILD_INITRAMFS=1
-DEFCONFIG=X6525_defconfig
-FRAGMENT_CONFIG=${KERNEL_DIR}/arch/arm64/configs/X6525.fragment
-OUTDIR="${ROOT_DIR}/out_abi/temp"
-PRE_DEFCONFIG_CMDS="cd ${KERNEL_DIR} && make "${TOOL_ARGS[@]}" O=${OUTDIR} ${MAKE_ARGS} gki_defconfig && ${ROOT_DIR}/${KERNEL_DIR}/scripts/sprd/sprd_create_user_config.sh ${OUTDIR}/.config ${ROOT_DIR}/${FRAGMENT_CONFIG} && cp ${OUTDIR}/.config ${ROOT_DIR}/${KERNEL_DIR}/arch/arm64/configs/X6525_defconfig && cd ${ROOT_DIR}"
-POST_DEFCONFIG_CMDS="rm ${ROOT_DIR}/${KERNEL_DIR}/arch/arm64/configs/${DEFCONFIG}"
+DEFCONFIG=X6525_stock_defconfig
 
 ABI_DEFINITION=android/abi_gki_aarch64.xml
 KMI_SYMBOL_LIST=android/abi_gki_aarch64_unisoc
